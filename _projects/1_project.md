@@ -1,15 +1,16 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Units-ML
+description: Summary of the work in the work "Multidimensional Belief Quantification for label-efficient meta-learning"
 img: assets/img/12.jpg
 importance: 1
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+In this work, we develop a novel computationally-efficient uncertainty-aware meta-learning model. 
+We show the effectiveness of the uncertainty information using various experiments.
+
+This work is based on Evidential Deep Learning work (see blog for details), and focuses on optimization-based meta-learning. However, extension to other meta-learning approaches such as metric-based meta-learning should be straightforward.
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
