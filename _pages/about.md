@@ -2,15 +2,15 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Ph.D. Student</a>. Rochester Institute of Technology, NY <br>
+subtitle: <a href='#'>Ph.D. Student</a>. Rochester Institute of Technology, New York <br>
 
-    390 Clay Rd, Rochester, NY, 14623
+    93 Scottsville Rd, Rochester, NY, 14611
 #. Contacts. Moto. Etc.
 
 profile:
   align: right
   image: profile2.jpeg
-  image_cicular: false # crops the image to make it circular
+  image_cicular: true # crops the image to make it circular
   address: >
 
 
@@ -27,12 +27,12 @@ social: true  # includes social icons at the bottom of the page
 # Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
 ---
 
-I'm a 4th year Ph.D. Student in Computer Science working with [Prof. Qi Yu](https://www.rit.edu/mining/qi-yu) at  [Machine Learning and Data Intensive Computing Lab, RIT](https://www.rit.edu/mining/). 
-
-I completed my undergraduate in Electronics and Communication Engineering from [Institute of Engineering, Pulchowk Campus](https://pcampus.edu.np/), Nepal.
+I'm a 5th year Ph.D. Student in Computer Science working with [Prof. Qi Yu](https://www.rit.edu/mining/qi-yu) at  [Machine Learning and Data Intensive Computing Lab, RIT](https://www.rit.edu/mining/). I completed my undergraduate in Electronics and Communication Engineering from [Institute of Engineering, Pulchowk Campus](https://pcampus.edu.np/), Nepal. 
 
 ### Research
-I am interested in developing trustworthy deep learning models that can learn from limited data. Currently, I am working on developing robust, uncertainty-aware meta-learning models and their application in few-shot and any-shot learning problems.
+I am interested in developing trustworthy deep learning models that can learn from limited data. My research focuses on developing computationally-efficient, adversarially robust, deep learning models with accurate fine-grained uncertainty quantification capabilities, with a special focus on meta-learning models. The developed models have been successfully used for improved few-shot classification, few-shot regression, and image completion problems.   
+
+My resume: [Deep Resume, updated on October 14, 2023](https://pandeydeep9.github.io/assets/pdf/deep_resume.pdf). My Research Publications: [Publications List](https://pandeydeep9.github.io/publications/)
 
 ### Research Interests: 
-Deep Learning, Meta-Learning, Uncertainty Awareness, Adversarial Robustness, Pattern recognition, Few-Shot Learning, and application of Deep Learning to real-world problems 
+Uncertainty Awareness, Adversarial Robustness, Meta-Learning, Transfer Learning, Multi-task Learning, Few-Shot Learning, Pattern recognition, and application of Deep Learning to real-world problems 
