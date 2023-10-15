@@ -32,7 +32,7 @@ I'm a 5th year Ph.D. Student in Computer Science working with [Prof. Qi Yu](http
 ### Research
 I am interested in developing trustworthy deep learning models that can learn from limited data. My research focuses on developing computationally-efficient, adversarially robust, deep learning models with accurate fine-grained uncertainty quantification capabilities, with a special focus on meta-learning models. The developed models have been successfully used for improved few-shot classification, few-shot regression, and image completion problems.   
 
-My resume: [Deep Resume, updated on October 14, 2023](https://pandeydeep9.github.io/assets/pdf/deep_resume.pdf). My Research Publications: [Publications List](https://pandeydeep9.github.io/publications/)
+My resume: [Deep Resume, updated on October 14, 2023](https://pandeydeep9.github.io/assets/pdf/deep_resume_oct14_2023.pdf). My Research Publications: [Publications List](https://pandeydeep9.github.io/publications/)
 
 ### Research Interests: 
 Uncertainty Awareness, Adversarial Robustness, Meta-Learning, Transfer Learning, Multi-task Learning, Few-Shot Learning, Pattern recognition, and application of Deep Learning to real-world problems 
