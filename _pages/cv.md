@@ -1,8 +1,8 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV
+title: Experience
+description: A brief overview of my research and professional background.
 nav: true
 nav_order: 3
-cv_pdf: deep_resume_oct14_2023.pdf
 ---
