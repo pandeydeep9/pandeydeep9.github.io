@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Applied Scientist at Amazon · Search, recommendations, and trustworthy AI
+subtitle: Applied Scientist at Amazon · Trustworthy AI researcher
 
 profile:
   align: right
@@ -14,9 +14,13 @@ selected_papers: true
 social: true
 ---
 
-I’m an Applied Scientist at Amazon, where I work on search and recommendation systems that personalize content discovery for Fire TV customers. My research focuses on trustworthy machine learning, particularly evidential deep learning, uncertainty quantification, and Bayesian deep learning. More broadly, I’m interested in advancing AI systems that are reliable, adaptable, and useful in the real world, including work with large language models.
+I’m an Applied Scientist at Amazon, where I work on search and recommendation systems that personalize content discovery for Fire TV customers.
 
-I earned my Ph.D. in Computing and Information Sciences at Rochester Institute of Technology, where I worked with [Prof. Qi Yu](https://www.rit.edu/mining/qi-yu). My doctoral research developed uncertainty-aware models that learn from limited data, with a focus on efficient, robust, and well-calibrated few-shot classification and regression. I completed my undergraduate degree in Electronics and Communication Engineering at the [Institute of Engineering, Pulchowk Campus](https://pcampus.edu.np/) in Nepal.
+My research is in **trustworthy AI**: developing models that can learn from limited data and give meaningful estimates of their uncertainty. During my Ph.D., I worked on evidential deep learning, Bayesian methods, and uncertainty-aware meta-learning, with an emphasis on efficient, robust, and well-calibrated few-shot learning.
+
+I’m also interested in large language models and, more broadly, how to make AI systems reliable, adaptable, and useful in the real world.
+
+I earned my Ph.D. in Computing and Information Sciences at Rochester Institute of Technology, where I worked with [Prof. Qi Yu](https://www.rit.edu/mining/qi-yu). I completed my undergraduate degree in Electronics and Communication Engineering at the [Institute of Engineering, Pulchowk Campus](https://pcampus.edu.np/) in Nepal.
 
 <div class="home-links">
   <a href="/publications/">Publications <span aria-hidden="true">↗</span></a>
