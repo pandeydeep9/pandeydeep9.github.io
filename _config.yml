@@ -13,7 +13,7 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   
-keywords: Deep Shankar Pandey, Deep pandey, Uncertainty Quantification, Meta-Learning, Few Shot Learning, Limited Data,# add your own keywords or leave empty
+keywords: Deep Shankar Pandey, trustworthy machine learning, uncertainty quantification, evidential deep learning, Bayesian deep learning, recommendation systems
 ## Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -48,7 +48,7 @@ rss_icon: true
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 1000px
@@ -97,7 +97,7 @@ facebook_id: # your facebook id
 discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
-  I usually reply emails within 24 hours. Email: dp7972@rit.edu or 000000000pandeydeep9g@gmail.com
+  Find me on GitHub, LinkedIn, and Google Scholar.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -114,7 +114,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: My Research Blogs # blog_name will be displayed in your blog page
-blog_nav_title: Blogs # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title: # older writing remains accessible at /blog/
 blog_description: High level overview of my research interests
 permalink: /blog/:year/:title/
 
@@ -147,8 +147,8 @@ collections:
     output: true
     permalink: /projects/:path/
 
-news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 5 # leave blank to include all the news in the `_news` folder
+news_scrollable: false
+news_limit: 4
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
