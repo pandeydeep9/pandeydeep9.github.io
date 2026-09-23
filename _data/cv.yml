@@ -2,15 +2,30 @@
   type: time_table
   contents:
     - title: Applied Scientist
-      institution: Amazon, Fire TV
-      year: 2025–present
+      institution: Amazon, Fire TV Science
+      year: Feb 2025–present
       description:
-        - Search, recommendation, and personalization for content discovery.
-    - title: Research Assistant
+        - Develop and evaluate machine learning approaches that help Fire TV customers discover relevant content.
+        - Work with science, engineering, and product partners to bring research into customer experiences.
+        - Focus on search, recommendations, personalization, and reliable evaluation.
+    - title: Applied Scientist Intern
+      institution: Amazon, Fire TV Science
+      year: May–Aug 2024
+      description:
+        - Researched recommendation approaches for content discovery and evaluated their effectiveness.
+    - title: Deep Learning for Image and Video Processing Intern
+      institution: InterDigital Communications
+      year: May–Aug 2023
+      description:
+        - Worked on machine learning research for image and video processing.
+    - title: Graduate Research Assistant
       institution: Rochester Institute of Technology
-      year: 2019–2024
+      year: Aug 2019–Jan 2025
       description:
-        - Research in evidential deep learning, uncertainty quantification, and learning from limited data.
+        - Developed uncertainty-aware models for learning from limited data, including few-shot classification and regression.
+        - Studied evidential deep learning and developed methods to improve how models learn from training examples (ICML 2023; IEEE TPAMI 2026).
+        - Developed Bayesian methods for adapting vision foundation models with limited examples (NeurIPS 2024).
+        - Collaborated on applications in behavioral analysis and physics-informed machine learning.
 
 - title: Education
   type: time_table
@@ -25,12 +40,18 @@
       institution: Institute of Engineering, Pulchowk Campus, Tribhuvan University
       year: 2017
 
-- title: Research
+- title: Research areas
   type: list
   contents:
-    - Evidential deep learning and trustworthy uncertainty estimates
-    - Bayesian methods and adaptation of foundation models
-    - Meta-learning and few-shot learning
+    - Trustworthy AI, evidential deep learning, and uncertainty quantification
+    - Bayesian methods, foundation model adaptation, and few-shot learning
+    - Search, recommendations, and personalization
+
+- title: Professional service
+  type: list
+  contents:
+    - Program committee member and reviewer for AI and machine learning conferences, including NeurIPS, ICML, ICLR, CVPR, AAAI, and IJCAI.
+    - Reviewer for journals in machine learning and related areas.
 
 - title: Selected publications
   type: list
