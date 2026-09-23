@@ -1,8 +1,8 @@
 ---
 layout: cv
 permalink: /cv/
-title: Experience
-description: A brief overview of my research and professional background.
+title: CV
+description: Experience, education, research, and selected publications.
 nav: true
 nav_order: 3
 ---
