@@ -56,9 +56,10 @@ nav_order: 3
 .student-project-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; margin-top: 1.2rem; }
 .student-project-gallery figure { margin: 0; }
 .student-project-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #191923; border-radius: 12px; }
-.student-vr-links { gap: .6rem 1.2rem; margin: .8rem 0 1.3rem; }
-.student-vr-links a { padding: 0; border: 0; border-radius: 0; font-weight: 600; }
-.student-vr-links a:hover, .student-vr-links a:focus-visible { background: none; color: var(--accent); text-decoration: underline; }
+.student-vr-links { gap: .65rem; margin: .85rem 0 1.2rem; }
+.student-vr-links a { padding: .45rem .85rem; border: 1px solid #91cfac; border-radius: 999px; background: #e8f6ee; color: #17613d; font-weight: 600; }
+.student-vr-links a:hover, .student-vr-links a:focus-visible { border-color: #17613d; background: #17613d; color: #fff; text-decoration: none; }
+.student-vr-links a:focus-visible { outline: 2px solid #17613d; outline-offset: 2px; }
 .student-vr-credit { margin: .8rem 0 0; font-size: .78rem; color: var(--global-text-color-light); }
 .student-afterword { border-left: 4px solid #6941c6; padding: .7rem 1.2rem; margin: 2rem 0 .5rem; background: var(--global-card-bg-color); border-radius: 0 12px 12px 0; }
 .student-afterword h2 { margin: 0 0 .55rem; font-size: 1.35rem; }
