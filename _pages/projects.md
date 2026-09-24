@@ -51,3 +51,7 @@ Across my research, I study how models can learn from limited data while making 
 ## Broader interests
 
 I’m interested in large language models and other foundation models, and in making AI systems more reliable and useful in practice.
+
+## Earlier projects
+
+I also built apps, games, and hardware prototypes as an undergraduate in Nepal. [Explore my undergraduate projects]({{ '/projects/undergraduate/' | relative_url }}), including Food Tours Nepal, Lingo App, and Save the Tree.
