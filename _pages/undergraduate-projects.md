@@ -21,7 +21,7 @@ nav_order: 3
 .student-photo, .student-certificate { margin: .8rem 0 0; }
 .student-photo img { width: 100%; border-radius: 12px; }
 .student-logo { margin: 1rem 0 0; padding: 1rem; background: #fff; border: 1px solid var(--global-divider-color); border-radius: 14px; text-align: center; }
-.student-logo img { display: block; width: 100%; height: 210px; object-fit: cover; object-position: center 52%; border-radius: 8px; }
+.student-logo img { display: block; width: auto; max-width: 100%; height: 210px; margin: auto; object-fit: contain; border-radius: 8px; }
 .student-logo figcaption { font-size: .8rem; color: #666; margin-top: .35rem; }
 .student-photo figcaption, .student-certificate figcaption, .student-gallery figcaption { color: var(--global-text-color-light); font-size: .8rem; padding-top: .45rem; }
 .student-certificate { border: 1px solid var(--global-divider-color); border-radius: 12px; overflow: hidden; background: #f6f2ff; }
@@ -37,6 +37,7 @@ nav_order: 3
 .student-gallery { display: flex; gap: .85rem; margin: .8rem 0 0; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: thin; padding: .25rem .2rem 1rem; }
 .student-gallery figure { margin: 0; flex: 0 0 clamp(160px, 24%, 215px); scroll-snap-align: start; }
 .student-gallery img { display: block; width: 100%; aspect-ratio: 9 / 15; object-fit: cover; object-position: top; border: 1px solid var(--global-divider-color); border-radius: 12px; box-shadow: 0 8px 18px rgba(20,20,45,.12); }
+.student-gallery .student-splash img { object-fit: contain; background: white; }
 [data-zoomable] { cursor: zoom-in; transition: transform .25s ease, filter .25s ease; }
 [data-zoomable]:hover { transform: translateY(-3px); filter: brightness(.97); }
 [data-zoomable]:focus-visible { outline: 3px solid #7652d2; outline-offset: 3px; }
@@ -47,13 +48,52 @@ nav_order: 3
 .student-team li::before { content: "•"; color: var(--accent); font-weight: 700; margin-right: .4rem; }
 .student-team .student-lead { border-color: var(--accent); }
 .student-team .student-lead strong { color: var(--accent); font-size: .75rem; margin-left: .25rem; }
+.student-links { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1rem 0; }
+.student-links a { display: inline-block; border: 1px solid var(--accent); border-radius: 999px; padding: .45rem .85rem; color: var(--accent); font-size: .88rem; font-weight: 650; text-decoration: none; }
+.student-links a:hover, .student-links a:focus-visible { background: var(--accent); color: white; text-decoration: none; }
+.student-wide-image { display: block; width: 100%; max-height: 420px; object-fit: cover; object-position: center; border-radius: 12px; }
+.student-vr-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; margin-top: 1.2rem; }
+.student-vr-gallery figure { margin: 0; }
+.student-vr-gallery img { width: 100%; height: 230px; object-fit: cover; border-radius: 12px; }
 .medium-zoom-overlay { z-index: 2000; }
 .medium-zoom-image--opened { z-index: 2001; }
-@media (max-width: 700px) { .student-feature { grid-template-columns: 1fr; } .student-gallery figure { flex-basis: min(58vw, 210px); } }
+@media (max-width: 700px) { .student-feature, .student-vr-gallery { grid-template-columns: 1fr; } .student-gallery figure { flex-basis: min(58vw, 210px); } }
 @media (prefers-reduced-motion: reduce) { .student-gallery { scroll-behavior: auto; } [data-zoomable] { transition: none; } }
 </style>
 
-<p class="student-intro">Before my research career, I enjoyed building things with a purpose. These undergraduate projects in Nepal grew from ideas about food and culture, language preservation, playful learning, and conserving resources.</p>
+<p class="student-intro">Before my research career, I enjoyed building things with a purpose. These undergraduate projects in Nepal range from virtual reality and graphics to food, language preservation, games, and conserving resources.</p>
+
+<section class="student-project student-project-featured" id="redirected-walking">
+  <div class="student-meta">2017 · Undergraduate major project · Virtual reality</div>
+  <h2>Redirected Walking in Virtual Reality</h2>
+  <p>How can someone explore a large virtual world while walking within a smaller physical space? As the main developer, I implemented three redirected walking techniques in Unity: translational gain, rotational gain, and curvature gain. We built experimental scenes and a playable VR game, then studied how the techniques affected participants’ experience and performance using an HTC Vive.</p>
+  <p>The project grew alongside my internship at Paracosma. I also explored maze generation for the game environment. I’m grateful to Ken Ehrhart, CEO of Paracosma, and Sujit Jha for sharing equipment and development resources, and to our project supervisor Prof. Dr. Shashidhar Ram Joshi for his guidance.</p>
+  <div class="student-links"><a href="https://www.youtube.com/watch?v=_bluD007JiE" target="_blank" rel="noopener noreferrer">Watch game demo ↗</a><a href="{{ '/assets/pdf/redirected-walking-major-project-2017.pdf' | relative_url }}">Read the project report (PDF)</a><a href="https://github.com/pandeydeep9/Mazes" target="_blank" rel="noopener noreferrer">Explore maze algorithms ↗</a></div>
+  <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Main developer</strong></li><li>Bidur Wagle</li><li>Ashu Adhikari</li><li>Sujal Dhungana</li></ul></div>
+  <div class="student-vr-gallery">
+    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/redirected-walking-game-2017.png' | relative_url }}" alt="Screenshot of the redirected walking VR game in Unity, showing a player facing a skeletal enemy" loading="lazy" data-zoomable tabindex="0"><figcaption>Redirected walking game prototype</figcaption></figure>
+    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/maze-prototype-2017.png' | relative_url }}" alt="Red maze environment prototype with illuminated paths" loading="lazy" data-zoomable tabindex="0"><figcaption>Maze environment prototype</figcaption></figure>
+  </div>
+</section>
+
+<section class="student-project" id="graphics-project">
+  <div class="student-feature"><div>
+    <div class="student-meta">Third year · Computer graphics project</div>
+    <h2>3D Graphics Project</h2>
+    <p>Led a computer graphics project exploring an interactive 3D scene, with geometric structures, lighting, and visual effects. The original project screenshot and source are available on GitHub.</p>
+    <div class="student-links"><a href="https://github.com/pandeydeep9/GraphicsProject" target="_blank" rel="noopener noreferrer">View project on GitHub ↗</a></div>
+    <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Giru Pandey</li><li>Manish Basnet</li></ul></div>
+  </div><figure class="student-photo"><img src="{{ '/assets/img/undergrad/graphics-project-2017.png' | relative_url }}" alt="3D graphics project scene with purple and blue geometric platforms and green light rays" loading="lazy" data-zoomable tabindex="0"><figcaption>Graphics project · original screenshot</figcaption></figure></div>
+</section>
+
+<section class="student-project" id="locus-2017">
+  <div class="student-feature"><div>
+    <div class="student-meta">2017 · LOCUS Hack-A-Week</div>
+    <h2>3D Mystery Survival Game</h2>
+    <p>Led a team at LOCUS Hack-A-Week to prototype a multi-level 3D mystery survival game.</p>
+    <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Bidur Wagle</li><li>Aashish Neupane</li><li>Sameer Gopali</li></ul></div>
+  </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/locus-hack-a-week-2017.jpg' | relative_url }}" alt="LOCUS Hack-A-Week 2017 participation certificate for Deep Shankar Pandey" loading="lazy" data-zoomable tabindex="0"><figcaption>LOCUS 2017 · Hack-A-Week</figcaption></figure></div>
+</section>
 
 <section class="student-project student-project-featured">
   <div class="student-feature">
@@ -68,12 +108,12 @@ nav_order: 3
   </div>
     </div>
     <div><figure class="student-photo"><img src="{{ '/assets/img/undergrad/food-tour-team.jpg' | relative_url }}" alt="Deep Shankar Pandey and teammates wearing medals in a 2016 group photo" loading="lazy" data-zoomable tabindex="0"><figcaption>With teammates in 2016</figcaption></figure>
-      <figure class="student-logo"><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal original app logo" loading="lazy" data-zoomable tabindex="0"><figcaption>The original Food Tours Nepal logo</figcaption></figure>
+      <figure class="student-logo"><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal original app logo" loading="lazy"><figcaption>The original Food Tours Nepal logo</figcaption></figure>
     </div>
   </div>
   <div class="student-gallery-heading"><h3>Inside the app</h3><div class="student-gallery-controls"><button type="button" data-gallery-step="-1" aria-controls="food-tour-gallery" aria-label="Previous app screenshot">‹</button><button type="button" data-gallery-step="1" aria-controls="food-tour-gallery" aria-label="Next app screenshot">›</button></div></div>
   <div class="student-gallery" id="food-tour-gallery" role="group" aria-label="Food Tours Nepal app screenshots">
-    <figure><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal app splash screen with its logo" loading="lazy" data-zoomable tabindex="0"><figcaption>App splash screen</figcaption></figure>
+    <figure class="student-splash"><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal app splash screen with its logo" loading="lazy"><figcaption>App splash screen</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-foods.jpg' | relative_url }}" alt="Food Tours Nepal app screen showing a grid of Nepali foods" loading="lazy" data-zoomable tabindex="0"><figcaption>Explore dishes</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-map.jpg' | relative_url }}" alt="Food Tours Nepal map screen with nearby food places" loading="lazy" data-zoomable tabindex="0"><figcaption>Find nearby places</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-cuisines.jpg' | relative_url }}" alt="Food Tours Nepal app screen showing regional cuisines" loading="lazy" data-zoomable tabindex="0"><figcaption>Discover cuisines</figcaption></figure>
@@ -98,8 +138,8 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="student-feature"><div>
     <div class="student-meta">2016 · Individual coding competition<br><span class="student-award">★ First place · ACEM Code Camp</span></div>
     <h2>ACEM Code Camp</h2>
-    <p>Competed individually in the Code Camp coding challenge at TechBihani 2.0.</p>
-    <div class="student-team"><h3>Participation</h3><ul><li class="student-lead">Deep Pandey <strong>Solo competitor</strong></li></ul></div>
+    <p>Won the individual coding competition by completing all of its programming challenges first.</p>
+    <div class="student-team"><h3>Participant</h3><ul><li class="student-lead">Deep Pandey <strong>Winner</strong></li></ul></div>
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/acem-code-camp-2016.jpg' | relative_url }}" alt="ACEM TechBihani 2.0 certificate awarding first place in Code Camp" loading="lazy" data-zoomable tabindex="0"><figcaption>First place · ACEM Code Camp, January 2016</figcaption></figure></div>
 </section>
 
