@@ -47,13 +47,52 @@ nav_order: 3
 .student-team li::before { content: "•"; color: var(--accent); font-weight: 700; margin-right: .4rem; }
 .student-team .student-lead { border-color: var(--accent); }
 .student-team .student-lead strong { color: var(--accent); font-size: .75rem; margin-left: .25rem; }
+.student-links { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1rem 0; }
+.student-links a { display: inline-block; border: 1px solid var(--accent); border-radius: 999px; padding: .45rem .85rem; color: var(--accent); font-size: .88rem; font-weight: 650; text-decoration: none; }
+.student-links a:hover, .student-links a:focus-visible { background: var(--accent); color: white; text-decoration: none; }
+.student-wide-image { display: block; width: 100%; max-height: 420px; object-fit: cover; object-position: center; border-radius: 12px; }
+.student-vr-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; margin-top: 1.2rem; }
+.student-vr-gallery figure { margin: 0; }
+.student-vr-gallery img { width: 100%; height: 230px; object-fit: cover; border-radius: 12px; }
 .medium-zoom-overlay { z-index: 2000; }
 .medium-zoom-image--opened { z-index: 2001; }
-@media (max-width: 700px) { .student-feature { grid-template-columns: 1fr; } .student-gallery figure { flex-basis: min(58vw, 210px); } }
+@media (max-width: 700px) { .student-feature, .student-vr-gallery { grid-template-columns: 1fr; } .student-gallery figure { flex-basis: min(58vw, 210px); } }
 @media (prefers-reduced-motion: reduce) { .student-gallery { scroll-behavior: auto; } [data-zoomable] { transition: none; } }
 </style>
 
-<p class="student-intro">Before my research career, I enjoyed building things with a purpose. These undergraduate projects in Nepal grew from ideas about food and culture, language preservation, playful learning, and conserving resources.</p>
+<p class="student-intro">Before my research career, I enjoyed building things with a purpose. These undergraduate projects in Nepal range from virtual reality and graphics to food, language preservation, games, and conserving resources.</p>
+
+<section class="student-project student-project-featured" id="redirected-walking">
+  <div class="student-meta">2017 · Undergraduate major project · Virtual reality</div>
+  <h2>Redirected Walking in Virtual Reality</h2>
+  <p>How can someone explore a large virtual world while walking within a smaller physical space? As the main developer, I implemented three redirected walking techniques in Unity: translational gain, rotational gain, and curvature gain. We built experimental scenes and a playable VR game, then studied how the techniques affected participants’ experience and performance using an HTC Vive.</p>
+  <p>The project grew alongside my internship at Paracosma. I also explored maze generation for the game environment. I’m grateful to Ken Ehrhart, CEO of Paracosma, and Sujit Jha for sharing equipment and development resources, and to our project supervisor Prof. Dr. Shashidhar Ram Joshi for his guidance.</p>
+  <div class="student-links"><a href="https://www.youtube.com/watch?v=_bluD007JiE" target="_blank" rel="noopener noreferrer">Watch game demo ↗</a><a href="{{ '/assets/pdf/redirected-walking-major-project-2017.pdf' | relative_url }}">Read the project report (PDF)</a><a href="https://github.com/pandeydeep9/Mazes" target="_blank" rel="noopener noreferrer">Explore maze algorithms ↗</a></div>
+  <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Main developer</strong></li><li>Bidur Wagle</li><li>Ashu Adhikari</li><li>Sujal Dhungana</li></ul></div>
+  <div class="student-vr-gallery">
+    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/redirected-walking-game-2017.png' | relative_url }}" alt="Screenshot of the redirected walking VR game in Unity, showing a player facing a skeletal enemy" loading="lazy" data-zoomable tabindex="0"><figcaption>Redirected walking game prototype</figcaption></figure>
+    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/maze-prototype-2017.png' | relative_url }}" alt="Red maze environment prototype with illuminated paths" loading="lazy" data-zoomable tabindex="0"><figcaption>Maze environment prototype</figcaption></figure>
+  </div>
+</section>
+
+<section class="student-project" id="graphics-project">
+  <div class="student-feature"><div>
+    <div class="student-meta">Third year · Computer graphics project</div>
+    <h2>3D Graphics Project</h2>
+    <p>Led a computer graphics project exploring an interactive 3D scene, with geometric structures, lighting, and visual effects. The original project screenshot and source are available on GitHub.</p>
+    <div class="student-links"><a href="https://github.com/pandeydeep9/GraphicsProject" target="_blank" rel="noopener noreferrer">View project on GitHub ↗</a></div>
+    <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Giru Pandey</li><li>Manish Basnet</li></ul></div>
+  </div><figure class="student-photo"><img src="{{ '/assets/img/undergrad/graphics-project-2017.png' | relative_url }}" alt="3D graphics project scene with purple and blue geometric platforms and green light rays" loading="lazy" data-zoomable tabindex="0"><figcaption>Graphics project · original screenshot</figcaption></figure></div>
+</section>
+
+<section class="student-project" id="locus-2017">
+  <div class="student-feature"><div>
+    <div class="student-meta">2017 · LOCUS Hack-A-Week</div>
+    <h2>3D Mystery Survival Game</h2>
+    <p>Led a team at LOCUS Hack-A-Week to prototype a multi-level 3D mystery survival game.</p>
+    <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Bidur Wagle</li><li>Aashish Neupane</li><li>Sameer Gopali</li></ul></div>
+  </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/locus-hack-a-week-2017.jpg' | relative_url }}" alt="LOCUS Hack-A-Week 2017 participation certificate for Deep Shankar Pandey" loading="lazy" data-zoomable tabindex="0"><figcaption>LOCUS 2017 · Hack-A-Week</figcaption></figure></div>
+</section>
 
 <section class="student-project student-project-featured">
   <div class="student-feature">
