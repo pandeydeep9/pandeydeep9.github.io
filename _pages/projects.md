@@ -54,4 +54,4 @@ I’m interested in large language models and other foundation models, and in ma
 
 ## Earlier projects
 
-I also built apps, games, and hardware prototypes as an undergraduate in Nepal. [Explore my undergraduate projects]({{ '/projects/undergraduate/' | relative_url }}), including Food Tours Nepal, Lingo App, and Save the Tree.
+I also built apps, games, and hardware prototypes as an undergraduate in Nepal. [Explore my projects]({{ '/projects/undergraduate/' | relative_url }}), including Food Tours Nepal, Lingo App, and Home Automator.
