@@ -14,19 +14,29 @@ nav_order: 3
 .student-project:nth-of-type(4n) { --accent: #b66a25; }
 .student-project h2 { margin: .25rem 0 .55rem; font-size: 1.55rem; }
 .student-meta { color: var(--accent); font-size: .83rem; font-weight: 700; letter-spacing: .025em; text-transform: uppercase; }
+.student-award { display: inline-block; margin: .3rem 0; padding: .32rem .72rem; border-radius: 100px; background: #f4e7aa; color: #704c00; letter-spacing: 0; text-transform: none; }
 .student-project p { max-width: 740px; margin-bottom: .9rem; }
 .student-feature { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(240px, 1fr); gap: 1.3rem; align-items: start; }
 .student-feature > div:first-child { min-width: 0; }
 .student-photo, .student-certificate { margin: .8rem 0 0; }
 .student-photo img { width: 100%; border-radius: 12px; }
+.student-win { display: flex; align-items: center; gap: 1rem; margin-top: 1.2rem; padding: 1.1rem 1.25rem; border-radius: 14px; background: linear-gradient(135deg, #4f309c, #7850d5); color: white; }
+.student-win .win-icon { font-size: 2rem; line-height: 1; }
+.student-win strong { display: block; font-size: 1.1rem; }
+.student-win span:last-child { font-size: .85rem; }
 .student-photo figcaption, .student-certificate figcaption, .student-gallery figcaption { color: var(--global-text-color-light); font-size: .8rem; padding-top: .45rem; }
 .student-certificate { border: 1px solid var(--global-divider-color); border-radius: 12px; overflow: hidden; background: #f6f2ff; }
 .student-certificate a { display: block; }
 .student-certificate img { display: block; width: 100%; max-height: 235px; object-fit: contain; }
 .student-certificate figcaption { padding: .55rem .75rem; background: var(--global-card-bg-color); }
 .student-awards { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .7rem; }
-.student-gallery { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .8rem; margin: 1.5rem 0 0; }
-.student-gallery figure { margin: 0; }
+.student-gallery-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.7rem; }
+.student-gallery-heading h3 { font-size: 1rem; margin: 0; }
+.student-gallery-controls { display: flex; gap: .45rem; }
+.student-gallery-controls button { width: 2.3rem; height: 2.3rem; border: 1px solid var(--global-divider-color); border-radius: 50%; background: var(--global-card-bg-color); color: var(--accent); font-size: 1.4rem; line-height: 1; cursor: pointer; }
+.student-gallery-controls button:hover { background: var(--accent); color: white; }
+.student-gallery { display: flex; gap: .85rem; margin: .8rem 0 0; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: thin; padding: .25rem .2rem 1rem; }
+.student-gallery figure { margin: 0; flex: 0 0 clamp(160px, 24%, 215px); scroll-snap-align: start; }
 .student-gallery img { display: block; width: 100%; aspect-ratio: 9 / 15; object-fit: cover; object-position: top; border: 1px solid var(--global-divider-color); border-radius: 12px; box-shadow: 0 8px 18px rgba(20,20,45,.12); }
 [data-zoomable] { cursor: zoom-in; transition: transform .25s ease, filter .25s ease; }
 [data-zoomable]:hover { transform: translateY(-3px); filter: brightness(.97); }
@@ -40,7 +50,8 @@ nav_order: 3
 .student-team .student-lead strong { color: var(--accent); font-size: .75rem; margin-left: .25rem; }
 .medium-zoom-overlay { z-index: 2000; }
 .medium-zoom-image--opened { z-index: 2001; }
-@media (max-width: 700px) { .student-feature { grid-template-columns: 1fr; } .student-gallery { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 700px) { .student-feature { grid-template-columns: 1fr; } .student-gallery figure { flex-basis: min(58vw, 210px); } }
+@media (prefers-reduced-motion: reduce) { .student-gallery { scroll-behavior: auto; } [data-zoomable] { transition: none; } }
 </style>
 
 <p class="student-intro">Before my research career, I enjoyed building things with a purpose. These undergraduate projects in Nepal grew from ideas about food and culture, language preservation, playful learning, and conserving resources.</p>
@@ -48,37 +59,54 @@ nav_order: 3
 <section class="student-project student-project-featured">
   <div class="student-feature">
     <div>
-  <div class="student-meta">2016 · Android app · Second place, TechBihani 2.0</div>
+  <div class="student-meta">2016 · Android app<br><span class="student-award">★ Second place · TechBihani 2.0</span></div>
   <h2>Food Tours Nepal</h2>
-  <p>Built an app for exploring Nepal through its food, from individual dishes and regional cuisines to nearby places to eat. The prototype brought together food guides, community and recommendation views, and a map with filters for distance, price, and rating. Presented at Yomari Code Camp and earned second place in the TechBihani 2.0 software competition.</p>
+  <p>Built an app for exploring Nepal through its food, from individual dishes and regional cuisines to nearby places to eat. The prototype brought together food guides, community and recommendation views, and a map with filters for distance, price, and rating. It earned <strong>second place in the TechBihani 2.0 software competition</strong>.</p>
   <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Kushal Pokherel</li><li>Drishya Chhetri</li><li>Ayush Kafle</li><li>Aashish Neupane</li><li>Pranjal Dhakal</li><li>Bidur Khanal</li></ul></div>
   <div class="student-awards">
     <figure class="student-certificate"><img src="{{ '/assets/img/undergrad/food-tour-acem-2016.jpg' | relative_url }}" alt="TechBihani 2.0 certificate for second place in the software competition" loading="lazy" data-zoomable tabindex="0"><figcaption>Second place · TechBihani 2.0</figcaption></figure>
     <figure class="student-certificate"><img src="{{ '/assets/img/undergrad/food-tour-yomari-2016.jpg' | relative_url }}" alt="Yomari Code Camp 2016 participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>Yomari Code Camp · 2016</figcaption></figure>
   </div>
     </div>
-    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/food-tour-team.jpg' | relative_url }}" alt="Deep Shankar Pandey and teammates wearing medals in a 2016 group photo" loading="lazy" data-zoomable tabindex="0"><figcaption>With teammates in 2016</figcaption></figure>
+    <div><figure class="student-photo"><img src="{{ '/assets/img/undergrad/food-tour-team.jpg' | relative_url }}" alt="Deep Shankar Pandey and teammates wearing medals in a 2016 group photo" loading="lazy" data-zoomable tabindex="0"><figcaption>With teammates in 2016</figcaption></figure>
+      <div class="student-win"><span class="win-icon" aria-hidden="true">★</span><span><strong>Second place</strong>TechBihani 2.0 software competition · 2016</span></div>
+    </div>
   </div>
-  <div class="student-gallery">
+  <div class="student-gallery-heading"><h3>Inside the app</h3><div class="student-gallery-controls"><button type="button" data-gallery-step="-1" aria-controls="food-tour-gallery" aria-label="Previous app screenshot">‹</button><button type="button" data-gallery-step="1" aria-controls="food-tour-gallery" aria-label="Next app screenshot">›</button></div></div>
+  <div class="student-gallery" id="food-tour-gallery" role="group" aria-label="Food Tours Nepal app screenshots">
+    <figure><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal app splash screen with its logo" loading="lazy" data-zoomable tabindex="0"><figcaption>Food Tours Nepal</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-foods.jpg' | relative_url }}" alt="Food Tours Nepal app screen showing a grid of Nepali foods" loading="lazy" data-zoomable tabindex="0"><figcaption>Explore dishes</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-cuisines.jpg' | relative_url }}" alt="Food Tours Nepal app screen showing regional cuisines" loading="lazy" data-zoomable tabindex="0"><figcaption>Discover cuisines</figcaption></figure>
-    <figure><img src="{{ '/assets/img/undergrad/food-tour-dish.jpg' | relative_url }}" alt="Food Tours Nepal app screen with information about momo" loading="lazy" data-zoomable tabindex="0"><figcaption>Learn about food</figcaption></figure>
+    <figure><img src="{{ '/assets/img/undergrad/food-tour-dish.jpg' | relative_url }}" alt="Food Tours Nepal Momo screen with a photo, map button, and dish information" loading="lazy" data-zoomable tabindex="0"><figcaption>Explore Momo</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-map.jpg' | relative_url }}" alt="Food Tours Nepal map screen with nearby food places" loading="lazy" data-zoomable tabindex="0"><figcaption>Find nearby places</figcaption></figure>
   </div>
 </section>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var gallery = document.getElementById('food-tour-gallery');
+  document.querySelectorAll('[data-gallery-step]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      var card = gallery.querySelector('figure');
+      var gap = parseFloat(getComputedStyle(gallery).gap) || 0;
+      gallery.scrollBy({ left: Number(button.dataset.galleryStep) * (card.getBoundingClientRect().width + gap), behavior: 'smooth' });
+    });
+  });
+});
+</script>
+
 <section class="student-project">
   <div class="student-feature"><div>
-  <div class="student-meta">2015 · Android app · Best Idea, Yomari Code Camp</div>
+  <div class="student-meta">2015 · Android app<br><span class="student-award">★ Best Idea · Yomari Code Camp</span></div>
   <h2>Lingo App</h2>
-  <p>Led development of an app designed to help people learn endangered languages in Nepal and support their preservation. The idea began at a LOCUS 2015 hackathon and was refined for Yomari Code Camp, where it won Best Idea.</p>
-  <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Kushal Pokherel</li><li>Drishya Chhetri</li></ul></div>
+  <p>Served as the main developer of an app designed to help people learn endangered languages in Nepal and support their preservation. The idea began at a LOCUS 2015 hackathon and was refined for Yomari Code Camp, where it won Best Idea.</p>
+  <div class="student-team"><h3>Team</h3><ul><li>Deep Pandey <strong>Main developer</strong></li><li class="student-lead">Kushal Pokherel <strong>Lead</strong></li><li>Drishya Chhetri</li></ul></div>
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/lingo-locus-2015.jpg' | relative_url }}" alt="LOCUS 2015 hackathon participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>LOCUS 2015 · Hackathon</figcaption></figure></div>
 </section>
 
 <section class="student-project">
   <div class="student-feature"><div>
-  <div class="student-meta">2014 · C# and Windows 8.1 · Third place</div>
+  <div class="student-meta">2014 · C# and Windows 8.1<br><span class="student-award">★ Third place · Windows 8.1 Dev Camp</span></div>
   <h2>Save the Tree</h2>
   <p>Led the team and programmed a game that introduced children to nature conservation through play. Won third place at the Windows 8.1 Dev Camp at Pulchowk Campus.</p>
   <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Krishna Chapagain</li><li>Giru Pandey</li></ul></div>
