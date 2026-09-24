@@ -23,7 +23,7 @@ I’m also interested in large language models and, more broadly, how to make AI
 I earned my Ph.D. in Computing and Information Sciences at Rochester Institute of Technology, where I worked with [Prof. Qi Yu](https://www.rit.edu/mining/qi-yu). I completed my undergraduate degree in Electronics and Communication Engineering at the [Institute of Engineering, Pulchowk Campus](https://pcampus.edu.np/) in Nepal.
 
 <div class="home-links">
-  <a href="/publications/">Publications <span aria-hidden="true">↗</span></a>
-  <a href="/projects/">Research &amp; work <span aria-hidden="true">↗</span></a>
+  <a href="{{ '/research/' | relative_url }}">Research <span aria-hidden="true">↗</span></a>
+  <a href="{{ '/projects/' | relative_url }}">Work <span aria-hidden="true">↗</span></a>
   <a href="https://scholar.google.com/citations?user=EGkWnakAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
 </div>
