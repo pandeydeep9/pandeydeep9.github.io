@@ -20,10 +20,9 @@ nav_order: 3
 .student-feature > div:first-child { min-width: 0; }
 .student-photo, .student-certificate { margin: .8rem 0 0; }
 .student-photo img { width: 100%; border-radius: 12px; }
-.student-win { display: flex; align-items: center; gap: 1rem; margin-top: 1.2rem; padding: 1.1rem 1.25rem; border-radius: 14px; background: linear-gradient(135deg, #4f309c, #7850d5); color: white; }
-.student-win .win-icon { font-size: 2rem; line-height: 1; }
-.student-win strong { display: block; font-size: 1.1rem; }
-.student-win span:last-child { font-size: .85rem; }
+.student-logo { margin: 1rem 0 0; padding: 1rem; background: #fff; border: 1px solid var(--global-divider-color); border-radius: 14px; text-align: center; }
+.student-logo img { display: block; width: 100%; height: 210px; object-fit: cover; object-position: center 52%; border-radius: 8px; }
+.student-logo figcaption { font-size: .8rem; color: #666; margin-top: .35rem; }
 .student-photo figcaption, .student-certificate figcaption, .student-gallery figcaption { color: var(--global-text-color-light); font-size: .8rem; padding-top: .45rem; }
 .student-certificate { border: 1px solid var(--global-divider-color); border-radius: 12px; overflow: hidden; background: #f6f2ff; }
 .student-certificate a { display: block; }
@@ -61,7 +60,7 @@ nav_order: 3
     <div>
   <div class="student-meta">2016 · Android app<br><span class="student-award">★ Second place · TechBihani 2.0</span></div>
   <h2>Food Tours Nepal</h2>
-  <p>Built an app for exploring Nepal through its food, from individual dishes and regional cuisines to nearby places to eat. The prototype brought together food guides, community and recommendation views, and a map with filters for distance, price, and rating. It earned <strong>second place in the TechBihani 2.0 software competition</strong>.</p>
+  <p>Built an app for exploring Nepal through its food, from individual dishes and regional cuisines to nearby places to eat. The prototype brought together food guides, community and recommendation views, and a map with filters for distance, price, and rating.</p>
   <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Kushal Pokherel</li><li>Drishya Chhetri</li><li>Ayush Kafle</li><li>Aashish Neupane</li><li>Pranjal Dhakal</li><li>Bidur Khanal</li></ul></div>
   <div class="student-awards">
     <figure class="student-certificate"><img src="{{ '/assets/img/undergrad/food-tour-acem-2016.jpg' | relative_url }}" alt="TechBihani 2.0 certificate for second place in the software competition" loading="lazy" data-zoomable tabindex="0"><figcaption>Second place · TechBihani 2.0</figcaption></figure>
@@ -69,16 +68,16 @@ nav_order: 3
   </div>
     </div>
     <div><figure class="student-photo"><img src="{{ '/assets/img/undergrad/food-tour-team.jpg' | relative_url }}" alt="Deep Shankar Pandey and teammates wearing medals in a 2016 group photo" loading="lazy" data-zoomable tabindex="0"><figcaption>With teammates in 2016</figcaption></figure>
-      <div class="student-win"><span class="win-icon" aria-hidden="true">★</span><span><strong>Second place</strong>TechBihani 2.0 software competition · 2016</span></div>
+      <figure class="student-logo"><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal original app logo" loading="lazy" data-zoomable tabindex="0"><figcaption>The original Food Tours Nepal logo</figcaption></figure>
     </div>
   </div>
   <div class="student-gallery-heading"><h3>Inside the app</h3><div class="student-gallery-controls"><button type="button" data-gallery-step="-1" aria-controls="food-tour-gallery" aria-label="Previous app screenshot">‹</button><button type="button" data-gallery-step="1" aria-controls="food-tour-gallery" aria-label="Next app screenshot">›</button></div></div>
   <div class="student-gallery" id="food-tour-gallery" role="group" aria-label="Food Tours Nepal app screenshots">
-    <figure><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal app splash screen with its logo" loading="lazy" data-zoomable tabindex="0"><figcaption>Food Tours Nepal</figcaption></figure>
+    <figure><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal app splash screen with its logo" loading="lazy" data-zoomable tabindex="0"><figcaption>App splash screen</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-foods.jpg' | relative_url }}" alt="Food Tours Nepal app screen showing a grid of Nepali foods" loading="lazy" data-zoomable tabindex="0"><figcaption>Explore dishes</figcaption></figure>
+    <figure><img src="{{ '/assets/img/undergrad/food-tour-map.jpg' | relative_url }}" alt="Food Tours Nepal map screen with nearby food places" loading="lazy" data-zoomable tabindex="0"><figcaption>Find nearby places</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-cuisines.jpg' | relative_url }}" alt="Food Tours Nepal app screen showing regional cuisines" loading="lazy" data-zoomable tabindex="0"><figcaption>Discover cuisines</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-dish.jpg' | relative_url }}" alt="Food Tours Nepal Momo screen with a photo, map button, and dish information" loading="lazy" data-zoomable tabindex="0"><figcaption>Explore Momo</figcaption></figure>
-    <figure><img src="{{ '/assets/img/undergrad/food-tour-map.jpg' | relative_url }}" alt="Food Tours Nepal map screen with nearby food places" loading="lazy" data-zoomable tabindex="0"><figcaption>Find nearby places</figcaption></figure>
   </div>
 </section>
 
@@ -97,9 +96,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <section class="student-project">
   <div class="student-feature"><div>
+    <div class="student-meta">2016 · Individual coding competition<br><span class="student-award">★ First place · ACEM Code Camp</span></div>
+    <h2>ACEM Code Camp</h2>
+    <p>Competed individually in the Code Camp coding challenge at TechBihani 2.0.</p>
+    <div class="student-team"><h3>Participation</h3><ul><li class="student-lead">Deep Pandey <strong>Solo competitor</strong></li></ul></div>
+  </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/acem-code-camp-2016.jpg' | relative_url }}" alt="ACEM TechBihani 2.0 certificate awarding first place in Code Camp" loading="lazy" data-zoomable tabindex="0"><figcaption>First place · ACEM Code Camp, January 2016</figcaption></figure></div>
+</section>
+
+<section class="student-project">
+  <div class="student-feature"><div>
+    <div class="student-meta">May–September 2016 · E&amp;T–TU collaboration · Internship</div>
+    <h2>Blockchain Application</h2>
+    <p>Led development of a blockchain application during an E&amp;T–Tribhuvan University collaboration internship. Wrote its Python implementation, including the customer-facing interface and core application logic.</p>
+    <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead developer</strong></li><li>Diman Maharjan</li><li>Pooja Khanal</li><li>Prashuna Dahal</li></ul></div>
+  </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/blockchain-internship-2016.jpg' | relative_url }}" alt="E and T–Tribhuvan University collaboration internship certificate for the Block Chain Application project, May to September 2016" loading="lazy" data-zoomable tabindex="0"><figcaption>Blockchain application · E&amp;T–TU internship, 2016</figcaption></figure></div>
+</section>
+
+<section class="student-project">
+  <div class="student-feature"><div>
   <div class="student-meta">2015 · Android app<br><span class="student-award">★ Best Idea · Yomari Code Camp</span></div>
   <h2>Lingo App</h2>
-  <p>Served as the main developer of an app designed to help people learn endangered languages in Nepal and support their preservation. The idea began at a LOCUS 2015 hackathon and was refined for Yomari Code Camp, where it won Best Idea.</p>
+  <p>Served as the main developer of an app designed to help people learn endangered languages in Nepal and support their preservation. The idea began at a LOCUS 2015 hackathon and was refined for Yomari Code Camp.</p>
   <div class="student-team"><h3>Team</h3><ul><li>Deep Pandey <strong>Main developer</strong></li><li class="student-lead">Kushal Pokherel <strong>Lead</strong></li><li>Drishya Chhetri</li></ul></div>
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/lingo-locus-2015.jpg' | relative_url }}" alt="LOCUS 2015 hackathon participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>LOCUS 2015 · Hackathon</figcaption></figure></div>
 </section>
@@ -108,16 +125,16 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="student-feature"><div>
   <div class="student-meta">2014 · C# and Windows 8.1<br><span class="student-award">★ Third place · Windows 8.1 Dev Camp</span></div>
   <h2>Save the Tree</h2>
-  <p>Led the team and programmed a game that introduced children to nature conservation through play. Won third place at the Windows 8.1 Dev Camp at Pulchowk Campus.</p>
+  <p>Led the team and programmed a game that introduced children to nature conservation through play. Presented it at the Windows 8.1 Dev Camp at Pulchowk Campus.</p>
   <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Krishna Chapagain</li><li>Giru Pandey</li></ul></div>
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/save-the-tree-2014.jpg' | relative_url }}" alt="Windows 8.1 Dev Camp third-place certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>Third place · Windows 8.1 Dev Camp</figcaption></figure></div>
 </section>
 
 <section class="student-project">
   <div class="student-feature"><div>
-  <div class="student-meta">2014 · Hardware prototype · LOCUS</div>
+  <div class="student-meta">2014 · Arduino &amp; breadboard prototype · LOCUS</div>
   <h2>Home Automator</h2>
-  <p>Built a proof of concept that senses when a water tank is full and switches off the pump, helping prevent overflow and unnecessary electricity use.</p>
+  <p>Built an Arduino and breadboard proof of concept that senses when a water tank is full and switches off the pump, helping prevent overflow and unnecessary electricity use.</p>
   <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Bidur Wagle</li></ul></div>
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/water-tank-locus-2014.jpg' | relative_url }}" alt="LOCUS 2014 hardware competition participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>LOCUS 2014 · Hardware competition</figcaption></figure></div>
 </section>
