@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="student-meta">2015 · Android app<br><span class="student-award">★ Best Idea · Yomari Code Camp</span></div>
   <h2>Lingo App</h2>
   <p>Served as the main developer of an app designed to help people learn endangered languages in Nepal and support their preservation. The idea began at a LOCUS 2015 hackathon and was refined for Yomari Code Camp.</p>
-  <div class="student-team"><h3>Team</h3><ul><li>Deep Pandey <strong>Main developer</strong></li><li class="student-lead">Kushal Pokherel <strong>Lead</strong></li><li>Drishya Chhetri</li></ul></div>
+  <div class="student-team"><h3>Team</h3><ul><li>Deep Pandey <strong>Main developer</strong></li><li class="student-lead">Kushal Pokherel <strong>Project lead</strong></li><li>Drishya Chhetri</li></ul></div>
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/lingo-locus-2015.jpg' | relative_url }}" alt="LOCUS 2015 hackathon participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>LOCUS 2015 · Hackathon</figcaption></figure></div>
 </section>
 
