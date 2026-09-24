@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/undergraduate/
-description: Undergraduate projects in virtual reality, games, graphics, and software.
+description: Projects in virtual reality, games, graphics, and software.
 nav: true
 nav_order: 3
 ---
@@ -62,30 +62,11 @@ nav_order: 3
 .student-vr-links a:hover, .student-vr-links a:focus-visible { border-color: #17613d; background: #17613d; color: #fff; text-decoration: none; }
 .student-vr-links a:focus-visible { outline: 2px solid #17613d; outline-offset: 2px; }
 .student-vr-credit { margin: .8rem 0 0; font-size: .78rem; color: var(--global-text-color-light); }
-.student-career { margin: 0 0 2.8rem; }
-.student-career h2 { margin: 0 0 .8rem; font-size: 1.5rem; }
-.student-career-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; border: 1px solid var(--global-divider-color); border-radius: 18px; overflow: hidden; background: var(--global-card-bg-color); }
-.student-career-list li { min-width: 0; padding: 1.25rem 1.4rem; border-bottom: 1px solid var(--global-divider-color); }
-.student-career-list li:nth-child(odd) { border-right: 1px solid var(--global-divider-color); }
-.student-career-list li:nth-last-child(-n+2) { border-bottom: 0; }
-.student-career-list time { display: block; margin-bottom: .35rem; color: #6745b7; font-size: .82rem; font-weight: 700; }
-.student-career-list h3 { margin: 0 0 .38rem; font-size: 1.1rem; line-height: 1.35; }
-.student-career-list p { margin: 0; color: var(--global-text-color-light); font-size: .9rem; line-height: 1.5; }
 .medium-zoom-overlay { z-index: 2000; }
 .medium-zoom-image--opened { z-index: 2001; }
-@media (max-width: 700px) { .student-feature, .student-food-tour .student-feature, .student-project-gallery, .student-career-list { grid-template-columns: 1fr; } .student-career-list li, .student-career-list li:nth-child(odd) { border-right: 0; border-bottom: 1px solid var(--global-divider-color); } .student-career-list li:last-child { border-bottom: 0; } .student-gallery figure { flex-basis: min(58vw, 210px); } .student-jungle-gallery figure { flex-basis: min(85vw, 430px); } .student-jungle-gallery img { height: 230px; } }
+@media (max-width: 700px) { .student-feature, .student-food-tour .student-feature, .student-project-gallery { grid-template-columns: 1fr; } .student-gallery figure { flex-basis: min(58vw, 210px); } .student-jungle-gallery figure { flex-basis: min(85vw, 430px); } .student-jungle-gallery img { height: 230px; } }
 @media (prefers-reduced-motion: reduce) { .student-gallery, .student-jungle-gallery { scroll-behavior: auto; } [data-zoomable] { transition: none; } }
 </style>
-
-<section class="student-career" aria-labelledby="student-career-title">
-  <h2 id="student-career-title">From games to AI</h2>
-  <ol class="student-career-list">
-    <li><time datetime="2025">2025–present</time><h3>Applied Scientist · Amazon</h3><p>Search, recommendations, and personalization for Fire TV.</p></li>
-    <li><time datetime="2019">2019–2025</time><h3>PhD in Artificial Intelligence · RIT</h3><p>Trustworthy deep learning, few-shot learning, and uncertainty quantification.</p></li>
-    <li><time datetime="2018">2018–2019</time><h3>Teaching Assistant · Pulchowk Campus, IOE</h3><p>Computer organization and architecture with Prof. Dr. Subarna Shakya.</p></li>
-    <li><time datetime="2017">2017–2018</time><h3>Game Developer · Paracosma</h3><p>Unity VR development for <a href="https://www.youtube.com/watch?v=Jot0S9K5vV0" target="_blank" rel="noopener noreferrer">Unnamed VR ↗</a>.</p></li>
-  </ol>
-</section>
 
 <section class="student-project student-project-featured" id="redirected-walking">
   <div class="student-meta">2017 · Undergraduate major project · Virtual reality</div>
@@ -214,14 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/save-the-tree-2014.jpg' | relative_url }}" alt="Windows 8.1 Dev Camp third-place certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>Third place · Windows 8.1 Dev Camp</figcaption></figure></div>
 </section>
 
-<section class="student-project">
-  <div class="student-feature"><div>
-  <div class="student-meta">2014 · Arduino &amp; breadboard prototype · LOCUS</div>
-  <h2>Home Automator</h2>
-  <p>Built an Arduino and breadboard proof of concept that senses when a water tank is full and switches off the pump, helping prevent overflow and unnecessary electricity use.</p>
-  <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Bidur Wagle</li></ul></div>
-  </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/water-tank-locus-2014.jpg' | relative_url }}" alt="LOCUS 2014 hardware competition participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>LOCUS 2014 · Hardware competition</figcaption></figure></div>
-</section>
+
 
 <section class="student-project">
   <div class="student-feature"><div>
@@ -230,4 +204,13 @@ document.addEventListener('DOMContentLoaded', function () {
   <p>Developed a single-player game in C: guide a plane to its destination within a time limit while avoiding obstacles. Presented it at a student C project competition at Pulchowk Campus.</p>
   <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Bidur Khanal</li><li>Aashish Bhandari</li></ul></div>
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/plane-game-c-competition.jpg' | relative_url }}" alt="C project competition participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>C project competition · Pulchowk Campus</figcaption></figure></div>
+</section>
+
+<section class="student-project">
+  <div class="student-feature"><div>
+  <div class="student-meta">2014 · Arduino &amp; breadboard prototype · LOCUS</div>
+  <h2>Home Automator</h2>
+  <p>Built an Arduino and breadboard proof of concept that senses when a water tank is full and switches off the pump, helping prevent overflow and unnecessary electricity use.</p>
+  <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Bidur Wagle</li></ul></div>
+  </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/water-tank-locus-2014.jpg' | relative_url }}" alt="LOCUS 2014 hardware competition participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>LOCUS 2014 · Hardware competition</figcaption></figure></div>
 </section>
