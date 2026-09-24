@@ -1,5 +1,25 @@
-
-          <div class="publications">
-            <h2>Selected Publications</h2>
-            {% bibliography -f papers -q @*[selected=true]* %}
-          </div>
+<section class="home-selected-publications" aria-labelledby="home-publications-heading">
+  <style>
+  .home-selected-publications { margin: 2.5rem 0; }
+  .home-selected-publications h2 { margin-bottom: .7rem; }
+  .home-selected-publications ul { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--global-divider-color); }
+  .home-selected-publications li { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: .8rem; padding: .7rem 0; border-bottom: 1px solid var(--global-divider-color); line-height: 1.45; }
+  .home-selected-publications .paper-venue { color: var(--global-text-color-light); font-size: .86rem; padding-top: .08rem; }
+  .home-selected-publications a { font-weight: 500; }
+  .home-selected-publications .all-research { margin: .8rem 0 0; font-size: .9rem; }
+  @media (max-width: 550px) { .home-selected-publications li { grid-template-columns: 1fr; gap: .1rem; } }
+  </style>
+  <h2 id="home-publications-heading">Publications</h2>
+  <ul>
+    <li><span class="paper-venue">TPAMI · 2026</span><a href="https://doi.org/10.1109/TPAMI.2026.3660699">Generalized Regularized Evidential Deep Learning Models: Theory and Comprehensive Evaluation</a></li>
+    <li><span class="paper-venue">NeurIPS · 2024</span><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/4f1fbd5ab8d58d0ecf33c95fd46b900e-Abstract-Conference.html">Be Confident in What You Know: Bayesian Parameter Efficient Fine-Tuning of Vision Foundation Models</a></li>
+    <li><span class="paper-venue">APL ML · 2024</span><a href="https://doi.org/10.1063/5.0192447">The Development of Thermodynamically Consistent and Physics-Informed Equation-of-State Model Through Machine Learning</a></li>
+    <li><span class="paper-venue">MLST · 2024</span><a href="https://doi.org/10.1088/2632-2153/ad2626">Deep Energy-Pressure Regression for a Thermodynamically Consistent EOS Model</a></li>
+    <li><span class="paper-venue">ICML · 2023</span><a href="https://proceedings.mlr.press/v202/pandey23a.html">Learn to Accumulate Evidence from All Training Samples: Theory and Practice</a></li>
+    <li><span class="paper-venue">ICML · 2023</span><a href="https://proceedings.mlr.press/v202/wang23ab.html">Deep Temporal Sets with Evidential Reinforced Attentions for Unique Behavioral Pattern Discovery</a></li>
+    <li><span class="paper-venue">AAAI · 2023</span><a href="https://doi.org/10.1609/aaai.v37i8.26125">Evidential Conditional Neural Processes</a></li>
+    <li><span class="paper-venue">CVPR · 2022</span><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Pandey_Multidimensional_Belief_Quantification_for_Label-Efficient_Meta-Learning_CVPR_2022_paper.html">Multidimensional Belief Quantification for Label-Efficient Meta-Learning</a></li>
+    <li><span class="paper-venue">Big Data · 2021</span><a href="https://doi.org/10.1109/BigData52589.2021.9671469">Uncertainty-Aware Multiple Instance Learning from Large-Scale Long Time Series Data</a></li>
+  </ul>
+  <p class="all-research"><a href="{{ '/research/' | relative_url }}">All research and publications ↗</a></p>
+</section>
