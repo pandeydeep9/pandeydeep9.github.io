@@ -20,16 +20,16 @@ nav_order: 3
 .student-feature > div:first-child { min-width: 0; }
 .student-photo, .student-certificate { margin: .8rem 0 0; }
 .student-photo img { width: 100%; border-radius: 12px; }
-.student-logo { display: flex; align-items: center; gap: 1rem; margin: 1rem 0 0; padding: .65rem .85rem; background: #fff; border: 1px solid var(--global-divider-color); border-radius: 14px; }
-.student-logo-mark { flex: 0 0 82px; width: 82px; height: 82px; overflow: hidden; border-radius: 10px; background: #fff; }
-.student-logo-mark img { display: block; width: 82px; height: 82px; object-fit: cover; object-position: center; transform: scale(2.35); }
-.student-logo figcaption { font-size: .88rem; color: #555; line-height: 1.4; }
 .student-photo figcaption, .student-certificate figcaption, .student-gallery figcaption { color: var(--global-text-color-light); font-size: .8rem; padding-top: .45rem; }
 .student-certificate { border: 1px solid var(--global-divider-color); border-radius: 12px; overflow: hidden; background: #f6f2ff; }
 .student-certificate a { display: block; }
 .student-certificate img { display: block; width: 100%; max-height: 235px; object-fit: contain; }
 .student-certificate figcaption { padding: .55rem .75rem; background: var(--global-card-bg-color); }
 .student-awards { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .7rem; }
+.student-food-tour .student-feature { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.student-food-tour .student-awards { margin-top: .85rem; }
+.student-food-tour .student-certificate img { max-height: 170px; }
+.student-food-tour > .student-team { margin-top: 1rem; }
 .student-gallery-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.7rem; }
 .student-gallery-heading h3 { font-size: 1rem; margin: 0; }
 .student-gallery-controls { display: flex; gap: .45rem; }
@@ -56,9 +56,9 @@ nav_order: 3
 .student-project-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; margin-top: 1.2rem; }
 .student-project-gallery figure { margin: 0; }
 .student-project-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #191923; border-radius: 12px; }
-.student-jungle-gallery figure:first-child { grid-column: 1 / -1; }
-.student-jungle-gallery figure:first-child img { max-height: 430px; }
-.student-jungle-gallery img { background: #e4fbff; }
+.student-jungle-gallery { display: flex; gap: .85rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: thin; padding: .25rem .1rem 1rem; }
+.student-jungle-gallery figure { flex: 0 0 clamp(275px, 48%, 530px); scroll-snap-align: start; }
+.student-jungle-gallery img { width: 100%; height: 280px; aspect-ratio: auto; object-fit: contain; background: #e4fbff; }
 .student-vr-links { gap: .65rem; margin: .85rem 0 1.2rem; }
 .student-vr-links a { padding: .45rem .85rem; border: 1px solid #91cfac; border-radius: 999px; background: #e8f6ee; color: #17613d; font-weight: 600; }
 .student-vr-links a:hover, .student-vr-links a:focus-visible { border-color: #17613d; background: #17613d; color: #fff; text-decoration: none; }
@@ -76,8 +76,8 @@ nav_order: 3
 .student-projects-heading { margin: 0 0 1rem; padding-top: 1.4rem; border-top: 1px solid var(--global-divider-color); font-size: 1.55rem; }
 .medium-zoom-overlay { z-index: 2000; }
 .medium-zoom-image--opened { z-index: 2001; }
-@media (max-width: 700px) { .student-feature, .student-project-gallery, .student-career-list { grid-template-columns: 1fr; } .student-career-list li, .student-career-list li:nth-child(odd) { border-right: 0; border-bottom: 1px solid var(--global-divider-color); } .student-career-list li:last-child { border-bottom: 0; } .student-gallery figure { flex-basis: min(58vw, 210px); } }
-@media (prefers-reduced-motion: reduce) { .student-gallery { scroll-behavior: auto; } [data-zoomable] { transition: none; } }
+@media (max-width: 700px) { .student-feature, .student-food-tour .student-feature, .student-project-gallery, .student-career-list { grid-template-columns: 1fr; } .student-career-list li, .student-career-list li:nth-child(odd) { border-right: 0; border-bottom: 1px solid var(--global-divider-color); } .student-career-list li:last-child { border-bottom: 0; } .student-gallery figure { flex-basis: min(58vw, 210px); } .student-jungle-gallery figure { flex-basis: min(85vw, 430px); } .student-jungle-gallery img { height: 230px; } }
+@media (prefers-reduced-motion: reduce) { .student-gallery, .student-jungle-gallery { scroll-behavior: auto; } [data-zoomable] { transition: none; } }
 </style>
 
 <section class="student-career" aria-labelledby="student-career-title">
@@ -133,22 +133,21 @@ nav_order: 3
 
 
 
-<section class="student-project student-project-featured">
+<section class="student-project student-project-featured student-food-tour">
   <div class="student-feature">
     <div>
   <div class="student-meta">2016 · Android app<br><span class="student-award">★ Second place · TechBihani 2.0</span></div>
   <h2>Food Tours Nepal</h2>
   <p>Built an app for exploring Nepal through its food, from individual dishes and regional cuisines to nearby places to eat. The prototype brought together food guides, community and recommendation views, and a map with filters for distance, price, and rating.</p>
-  <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Kushal Pokherel</li><li>Drishya Chhetri</li><li>Ayush Kafle</li><li>Aashish Neupane</li><li>Pranjal Dhakal</li><li>Bidur Khanal</li></ul></div>
-  <div class="student-awards">
-    <figure class="student-certificate"><img src="{{ '/assets/img/undergrad/food-tour-acem-2016.jpg' | relative_url }}" alt="TechBihani 2.0 certificate for second place in the software competition" loading="lazy" data-zoomable tabindex="0"><figcaption>Second place · TechBihani 2.0</figcaption></figure>
-    <figure class="student-certificate"><img src="{{ '/assets/img/undergrad/food-tour-yomari-2016.jpg' | relative_url }}" alt="Yomari Code Camp 2016 participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>Yomari Code Camp · 2016</figcaption></figure>
-  </div>
     </div>
     <div><figure class="student-photo"><img src="{{ '/assets/img/undergrad/food-tour-team.jpg' | relative_url }}" alt="Deep Shankar Pandey and teammates wearing medals in a 2016 group photo" loading="lazy" data-zoomable tabindex="0"><figcaption>With teammates in 2016</figcaption></figure>
-      <figure class="student-logo"><span class="student-logo-mark"><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal logo from the original app splash screen" loading="lazy"></span><figcaption>Original Food Tours Nepal app logo</figcaption></figure>
+      <div class="student-awards">
+        <figure class="student-certificate"><img src="{{ '/assets/img/undergrad/food-tour-acem-2016.jpg' | relative_url }}" alt="TechBihani 2.0 certificate for second place in the software competition" loading="lazy" data-zoomable tabindex="0"><figcaption>Second place · TechBihani 2.0</figcaption></figure>
+        <figure class="student-certificate"><img src="{{ '/assets/img/undergrad/food-tour-yomari-2016.jpg' | relative_url }}" alt="Yomari Code Camp 2016 participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>Yomari Code Camp · 2016</figcaption></figure>
+      </div>
     </div>
   </div>
+  <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Kushal Pokherel</li><li>Drishya Chhetri</li><li>Ayush Kafle</li><li>Aashish Neupane</li><li>Pranjal Dhakal</li><li>Bidur Khanal</li></ul></div>
   <div class="student-gallery-heading"><h3>Inside the app</h3><div class="student-gallery-controls"><button type="button" data-gallery-step="-1" aria-controls="food-tour-gallery" aria-label="Previous app screenshot">‹</button><button type="button" data-gallery-step="1" aria-controls="food-tour-gallery" aria-label="Next app screenshot">›</button></div></div>
   <div class="student-gallery" id="food-tour-gallery" role="group" aria-label="Food Tours Nepal app screenshots">
     <figure class="student-splash"><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal app splash screen with its logo" loading="lazy"><figcaption>App splash screen</figcaption></figure>
@@ -161,12 +160,12 @@ nav_order: 3
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var gallery = document.getElementById('food-tour-gallery');
   document.querySelectorAll('[data-gallery-step]').forEach(function (button) {
     button.addEventListener('click', function () {
+      var gallery = document.getElementById(button.getAttribute('aria-controls'));
       var card = gallery.querySelector('figure');
       var gap = parseFloat(getComputedStyle(gallery).gap) || 0;
-      gallery.scrollBy({ left: Number(button.dataset.galleryStep) * (card.getBoundingClientRect().width + gap), behavior: 'smooth' });
+      gallery.scrollBy({ left: Number(button.dataset.galleryStep) * (card.getBoundingClientRect().width + gap), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     });
   });
 });
@@ -204,7 +203,8 @@ document.addEventListener('DOMContentLoaded', function () {
   <h2>Jungle Run</h2>
   <p>Led the development of a level-based platform game in C++. Players navigate floating platforms, collect items, and track their score and lives.</p>
   <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Drishya Chhetri</li><li>Amir Rimal</li><li>Manish Basnet</li></ul></div>
-  <div class="student-project-gallery student-jungle-gallery">
+  <div class="student-gallery-heading"><h3>Game screenshots</h3><div class="student-gallery-controls"><button type="button" data-gallery-step="-1" aria-controls="jungle-run-gallery" aria-label="Previous Jungle Run screenshot">‹</button><button type="button" data-gallery-step="1" aria-controls="jungle-run-gallery" aria-label="Next Jungle Run screenshot">›</button></div></div>
+  <div class="student-project-gallery student-jungle-gallery" id="jungle-run-gallery" role="group" aria-label="Jungle Run game screenshots">
     <figure class="student-photo"><img src="{{ '/assets/img/undergrad/jungle-run-gameplay-2015.png' | relative_url }}" alt="Jungle Run gameplay with a character jumping between platforms and collecting items" loading="lazy" data-zoomable tabindex="0"><figcaption>Platforming and collectibles</figcaption></figure>
     <figure class="student-photo"><img src="{{ '/assets/img/undergrad/jungle-run-start-2015.png' | relative_url }}" alt="Jungle Run start screen asking the player to enter a name" loading="lazy" data-zoomable tabindex="0"><figcaption>Start screen</figcaption></figure>
     <figure class="student-photo"><img src="{{ '/assets/img/undergrad/jungle-run-level-2015.png' | relative_url }}" alt="Jungle Run gameplay showing another section of the level with the character on a platform" loading="lazy" data-zoomable tabindex="0"><figcaption>Exploring a level</figcaption></figure>
