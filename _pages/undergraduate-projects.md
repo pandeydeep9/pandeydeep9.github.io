@@ -61,12 +61,18 @@ nav_order: 3
 .student-vr-links a:hover, .student-vr-links a:focus-visible { border-color: #17613d; background: #17613d; color: #fff; text-decoration: none; }
 .student-vr-links a:focus-visible { outline: 2px solid #17613d; outline-offset: 2px; }
 .student-vr-credit { margin: .8rem 0 0; font-size: .78rem; color: var(--global-text-color-light); }
-.student-afterword { border-left: 4px solid #6941c6; padding: .7rem 1.2rem; margin: 2rem 0 .5rem; background: var(--global-card-bg-color); border-radius: 0 12px 12px 0; }
-.student-afterword h2 { margin: 0 0 .55rem; font-size: 1.35rem; }
-.student-afterword p { max-width: 820px; margin: 0; line-height: 1.65; }
+.student-afterword { padding: clamp(1.2rem, 3vw, 2rem); margin: 2rem 0 .5rem; border: 1px solid var(--global-divider-color); border-radius: 18px; background: var(--global-card-bg-color); }
+.student-afterword h2 { margin: 0 0 1.2rem; font-size: 1.45rem; }
+.student-journey { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; padding: 0; margin: 0; list-style: none; }
+.student-journey li { min-width: 0; padding: .1rem 0 .1rem 1rem; border-left: 3px solid #6941c6; }
+.student-journey li:nth-child(2) { border-color: #13877b; }
+.student-journey li:nth-child(3) { border-color: #b66a25; }
+.student-journey time { display: block; margin-bottom: .4rem; color: var(--global-text-color-light); font-size: .8rem; font-weight: 700; }
+.student-journey h3 { margin: 0 0 .5rem; font-size: 1.02rem; line-height: 1.35; }
+.student-journey p { margin: 0; line-height: 1.5; font-size: .9rem; }
 .medium-zoom-overlay { z-index: 2000; }
 .medium-zoom-image--opened { z-index: 2001; }
-@media (max-width: 700px) { .student-feature, .student-project-gallery { grid-template-columns: 1fr; } .student-gallery figure { flex-basis: min(58vw, 210px); } }
+@media (max-width: 700px) { .student-feature, .student-project-gallery, .student-journey { grid-template-columns: 1fr; } .student-gallery figure { flex-basis: min(58vw, 210px); } }
 @media (prefers-reduced-motion: reduce) { .student-gallery { scroll-behavior: auto; } [data-zoomable] { transition: none; } }
 </style>
 
@@ -207,5 +213,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <aside class="student-afterword" aria-label="What came next">
   <h2>From making games to studying AI</h2>
-  <p>In November 2017, while finishing the VR major project, I joined Paracosma as a game developer (through April 2018). I contributed to <a href="https://www.youtube.com/watch?v=Jot0S9K5vV0" target="_blank" rel="noopener noreferrer">Unnamed VR</a>, building VR painting tools, visual effects with shaders, and game character behavior in Unity. Later, I assisted Prof. Dr. Subarna Shakya with computer organization and architecture at Pulchowk Campus (November 2018–April 2019). Teaching sparked an independent study of AI and machine learning; I began my PhD at RIT in August 2019.</p>
+  <ol class="student-journey">
+    <li><time datetime="2017-11">Nov 2017 – Apr 2018</time><h3>Game developer · Paracosma</h3><p>Joined while completing the VR project. Built painting tools, shader effects, and character behavior for <a href="https://www.youtube.com/watch?v=Jot0S9K5vV0" target="_blank" rel="noopener noreferrer">Unnamed VR ↗</a>.</p></li>
+    <li><time datetime="2018-11">Nov 2018 – Apr 2019</time><h3>Teaching assistant · Pulchowk Campus</h3><p>Assisted Prof. Dr. Subarna Shakya with computer organization and architecture labs, lectures, and assignments.</p></li>
+    <li><time datetime="2019-08">Aug 2019</time><h3>PhD · RIT</h3><p>Studying AI and machine learning independently while teaching inspired my move into doctoral research.</p></li>
+  </ol>
 </aside>
