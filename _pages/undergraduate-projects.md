@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <section class="student-project">
   <div class="student-feature"><div>
-  <div class="student-meta">Undergraduate project · C programming</div>
+  <div class="student-meta">2014 · C programming project</div>
   <h2>Fly The Plane</h2>
   <p>Developed a single-player game in C: guide a plane to its destination within a time limit while avoiding obstacles. Presented it at a student C project competition at Pulchowk Campus.</p>
   <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Bidur Khanal</li><li>Aashish Bhandari</li></ul></div>
