@@ -8,7 +8,6 @@ nav_order: 3
 ---
 
 <style>
-.student-intro { max-width: 760px; margin: 0 0 2rem; font-size: 1.1rem; line-height: 1.65; }
 .student-project { --accent: #6941c6; border: 1px solid var(--global-divider-color); border-radius: 18px; padding: clamp(1.2rem, 3vw, 2rem); margin: 1.6rem 0; background: var(--global-card-bg-color); box-shadow: 0 12px 30px rgba(35,25,76,.07); }
 .student-project:nth-of-type(3n) { --accent: #13877b; }
 .student-project:nth-of-type(4n) { --accent: #b66a25; }
@@ -29,7 +28,6 @@ nav_order: 3
 .student-food-tour .student-feature { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 .student-food-tour .student-awards { margin-top: .85rem; }
 .student-food-tour .student-certificate img { max-height: 170px; }
-.student-food-tour > .student-team { margin-top: 1rem; }
 .student-gallery-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.7rem; }
 .student-gallery-heading h3 { font-size: 1rem; margin: 0; }
 .student-gallery-controls { display: flex; gap: .45rem; }
@@ -73,7 +71,6 @@ nav_order: 3
 .student-career-list time { display: block; margin-bottom: .35rem; color: #6745b7; font-size: .82rem; font-weight: 700; }
 .student-career-list h3 { margin: 0 0 .38rem; font-size: 1.1rem; line-height: 1.35; }
 .student-career-list p { margin: 0; color: var(--global-text-color-light); font-size: .9rem; line-height: 1.5; }
-.student-projects-heading { margin: 0 0 1rem; padding-top: 1.4rem; border-top: 1px solid var(--global-divider-color); font-size: 1.55rem; }
 .medium-zoom-overlay { z-index: 2000; }
 .medium-zoom-image--opened { z-index: 2001; }
 @media (max-width: 700px) { .student-feature, .student-food-tour .student-feature, .student-project-gallery, .student-career-list { grid-template-columns: 1fr; } .student-career-list li, .student-career-list li:nth-child(odd) { border-right: 0; border-bottom: 1px solid var(--global-divider-color); } .student-career-list li:last-child { border-bottom: 0; } .student-gallery figure { flex-basis: min(58vw, 210px); } .student-jungle-gallery figure { flex-basis: min(85vw, 430px); } .student-jungle-gallery img { height: 230px; } }
@@ -89,9 +86,6 @@ nav_order: 3
     <li><time datetime="2017">2017–2018</time><h3>Game Developer · Paracosma</h3><p>Unity VR development for <a href="https://www.youtube.com/watch?v=Jot0S9K5vV0" target="_blank" rel="noopener noreferrer">Unnamed VR ↗</a>.</p></li>
   </ol>
 </section>
-
-<h2 class="student-projects-heading">Undergraduate Projects</h2>
-<p class="student-intro">Games, conservation apps, and a virtual reality project from my years at Pulchowk Campus.</p>
 
 <section class="student-project student-project-featured" id="redirected-walking">
   <div class="student-meta">2017 · Undergraduate major project · Virtual reality</div>
@@ -139,6 +133,7 @@ nav_order: 3
   <div class="student-meta">2016 · Android app<br><span class="student-award">★ Second place · TechBihani 2.0</span></div>
   <h2>Food Tours Nepal</h2>
   <p>Built an app for exploring Nepal through its food, from individual dishes and regional cuisines to nearby places to eat. The prototype brought together food guides, community and recommendation views, and a map with filters for distance, price, and rating.</p>
+  <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Kushal Pokherel</li><li>Drishya Chhetri</li><li>Ayush Kafle</li><li>Aashish Neupane</li><li>Pranjal Dhakal</li><li>Bidur Khanal</li></ul></div>
     </div>
     <div><figure class="student-photo"><img src="{{ '/assets/img/undergrad/food-tour-team.jpg' | relative_url }}" alt="Deep Shankar Pandey and teammates wearing medals in a 2016 group photo" loading="lazy" data-zoomable tabindex="0"><figcaption>With teammates in 2016</figcaption></figure>
       <div class="student-awards">
@@ -147,7 +142,6 @@ nav_order: 3
       </div>
     </div>
   </div>
-  <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Kushal Pokherel</li><li>Drishya Chhetri</li><li>Ayush Kafle</li><li>Aashish Neupane</li><li>Pranjal Dhakal</li><li>Bidur Khanal</li></ul></div>
   <div class="student-gallery-heading"><h3>Inside the app</h3><div class="student-gallery-controls"><button type="button" data-gallery-step="-1" aria-controls="food-tour-gallery" aria-label="Previous app screenshot">‹</button><button type="button" data-gallery-step="1" aria-controls="food-tour-gallery" aria-label="Next app screenshot">›</button></div></div>
   <div class="student-gallery" id="food-tour-gallery" role="group" aria-label="Food Tours Nepal app screenshots">
     <figure class="student-splash"><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal app splash screen with its logo" loading="lazy"><figcaption>App splash screen</figcaption></figure>
