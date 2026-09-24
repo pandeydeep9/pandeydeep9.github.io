@@ -61,22 +61,34 @@ nav_order: 3
 .student-vr-links a:hover, .student-vr-links a:focus-visible { border-color: #17613d; background: #17613d; color: #fff; text-decoration: none; }
 .student-vr-links a:focus-visible { outline: 2px solid #17613d; outline-offset: 2px; }
 .student-vr-credit { margin: .8rem 0 0; font-size: .78rem; color: var(--global-text-color-light); }
-.student-afterword { padding: clamp(1.2rem, 3vw, 2rem); margin: 2rem 0 .5rem; border: 1px solid var(--global-divider-color); border-radius: 18px; background: var(--global-card-bg-color); }
-.student-afterword h2 { margin: 0 0 1.2rem; font-size: 1.45rem; }
-.student-journey { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; padding: 0; margin: 0; list-style: none; }
-.student-journey li { min-width: 0; padding: .1rem 0 .1rem 1rem; border-left: 3px solid #6941c6; }
-.student-journey li:nth-child(2) { border-color: #13877b; }
-.student-journey li:nth-child(3) { border-color: #b66a25; }
-.student-journey time { display: block; margin-bottom: .4rem; color: var(--global-text-color-light); font-size: .8rem; font-weight: 700; }
-.student-journey h3 { margin: 0 0 .5rem; font-size: 1.02rem; line-height: 1.35; }
-.student-journey p { margin: 0; line-height: 1.5; font-size: .9rem; }
+.student-career { margin: 0 0 2.8rem; }
+.student-career h2 { margin: 0 0 .8rem; font-size: 1.5rem; }
+.student-career-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; border: 1px solid var(--global-divider-color); border-radius: 18px; overflow: hidden; background: var(--global-card-bg-color); }
+.student-career-list li { min-width: 0; padding: 1.25rem 1.4rem; border-bottom: 1px solid var(--global-divider-color); }
+.student-career-list li:nth-child(odd) { border-right: 1px solid var(--global-divider-color); }
+.student-career-list li:nth-last-child(-n+2) { border-bottom: 0; }
+.student-career-list time { display: block; margin-bottom: .35rem; color: #6745b7; font-size: .82rem; font-weight: 700; }
+.student-career-list h3 { margin: 0 0 .38rem; font-size: 1.1rem; line-height: 1.35; }
+.student-career-list p { margin: 0; color: var(--global-text-color-light); font-size: .9rem; line-height: 1.5; }
+.student-projects-heading { margin: 0 0 1rem; padding-top: 1.4rem; border-top: 1px solid var(--global-divider-color); font-size: 1.55rem; }
 .medium-zoom-overlay { z-index: 2000; }
 .medium-zoom-image--opened { z-index: 2001; }
-@media (max-width: 700px) { .student-feature, .student-project-gallery, .student-journey { grid-template-columns: 1fr; } .student-gallery figure { flex-basis: min(58vw, 210px); } }
+@media (max-width: 700px) { .student-feature, .student-project-gallery, .student-career-list { grid-template-columns: 1fr; } .student-career-list li, .student-career-list li:nth-child(odd) { border-right: 0; border-bottom: 1px solid var(--global-divider-color); } .student-career-list li:last-child { border-bottom: 0; } .student-gallery figure { flex-basis: min(58vw, 210px); } }
 @media (prefers-reduced-motion: reduce) { .student-gallery { scroll-behavior: auto; } [data-zoomable] { transition: none; } }
 </style>
 
-<p class="student-intro">I learned by building: games, an app to explore Nepal through food, a tool to preserve languages, and eventually a virtual reality project that led to my first game development role. These are some of the projects and people who shaped my undergraduate years at Pulchowk Campus.</p>
+<section class="student-career" aria-labelledby="student-career-title">
+  <h2 id="student-career-title">From games to AI</h2>
+  <ol class="student-career-list">
+    <li><time datetime="2025">2025–present</time><h3>Applied Scientist · Amazon</h3><p>Search, recommendations, and personalization for Fire TV.</p></li>
+    <li><time datetime="2019">2019–2025</time><h3>PhD in Artificial Intelligence · RIT</h3><p>Trustworthy deep learning, few-shot learning, and uncertainty quantification.</p></li>
+    <li><time datetime="2018">2018–2019</time><h3>Teaching Assistant · Pulchowk Campus, IOE</h3><p>Computer organization and architecture with Prof. Dr. Subarna Shakya.</p></li>
+    <li><time datetime="2017">2017–2018</time><h3>Game Developer · Paracosma</h3><p>Unity VR development for <a href="https://www.youtube.com/watch?v=Jot0S9K5vV0" target="_blank" rel="noopener noreferrer">Unnamed VR ↗</a>.</p></li>
+  </ol>
+</section>
+
+<h2 class="student-projects-heading">Undergraduate Projects</h2>
+<p class="student-intro">Games, conservation apps, and a virtual reality project from my years at Pulchowk Campus.</p>
 
 <section class="student-project student-project-featured" id="redirected-walking">
   <div class="student-meta">2017 · Undergraduate major project · Virtual reality</div>
@@ -210,12 +222,3 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Bidur Khanal</li><li>Aashish Bhandari</li></ul></div>
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/plane-game-c-competition.jpg' | relative_url }}" alt="C project competition participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>C project competition · Pulchowk Campus</figcaption></figure></div>
 </section>
-
-<aside class="student-afterword" aria-label="What came next">
-  <h2>From making games to studying AI</h2>
-  <ol class="student-journey">
-    <li><time datetime="2017-11">Nov 2017 – Apr 2018</time><h3>Game developer · Paracosma</h3><p>Joined while completing the VR project. Built painting tools, shader effects, and character behavior for <a href="https://www.youtube.com/watch?v=Jot0S9K5vV0" target="_blank" rel="noopener noreferrer">Unnamed VR ↗</a>.</p></li>
-    <li><time datetime="2018-11">Nov 2018 – Apr 2019</time><h3>Teaching assistant · Pulchowk Campus</h3><p>Assisted Prof. Dr. Subarna Shakya with computer organization and architecture labs, lectures, and assignments.</p></li>
-    <li><time datetime="2019-08">Aug 2019</time><h3>PhD · RIT</h3><p>Studying AI and machine learning independently while teaching inspired my move into doctoral research.</p></li>
-  </ol>
-</aside>
