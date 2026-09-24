@@ -56,6 +56,9 @@ nav_order: 3
 .student-project-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; margin-top: 1.2rem; }
 .student-project-gallery figure { margin: 0; }
 .student-project-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #191923; border-radius: 12px; }
+.student-jungle-gallery figure:first-child { grid-column: 1 / -1; }
+.student-jungle-gallery figure:first-child img { max-height: 430px; }
+.student-jungle-gallery img { background: #e4fbff; }
 .student-vr-links { gap: .65rem; margin: .85rem 0 1.2rem; }
 .student-vr-links a { padding: .45rem .85rem; border: 1px solid #91cfac; border-radius: 999px; background: #e8f6ee; color: #17613d; font-weight: 600; }
 .student-vr-links a:hover, .student-vr-links a:focus-visible { border-color: #17613d; background: #17613d; color: #fff; text-decoration: none; }
@@ -194,6 +197,18 @@ document.addEventListener('DOMContentLoaded', function () {
   <p>Served as the main developer of an app designed to help people learn endangered languages in Nepal and support their preservation. The idea began at a LOCUS 2015 hackathon and was refined for Yomari Code Camp.</p>
   <div class="student-team"><h3>Team</h3><ul><li>Deep Pandey <strong>Main developer</strong></li><li class="student-lead">Kushal Pokherel <strong>Lead</strong></li><li>Drishya Chhetri</li></ul></div>
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/lingo-locus-2015.jpg' | relative_url }}" alt="LOCUS 2015 hackathon participation certificate" loading="lazy" data-zoomable tabindex="0"><figcaption>LOCUS 2015 · Hackathon</figcaption></figure></div>
+</section>
+
+<section class="student-project" id="jungle-run">
+  <div class="student-meta">2015 · C++ · Object-oriented programming</div>
+  <h2>Jungle Run</h2>
+  <p>Led the development of a level-based platform game in C++. Players navigate floating platforms, collect items, and track their score and lives.</p>
+  <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Lead</strong></li><li>Drishya Chhetri</li><li>Amir Rimal</li><li>Manish Basnet</li></ul></div>
+  <div class="student-project-gallery student-jungle-gallery">
+    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/jungle-run-gameplay-2015.png' | relative_url }}" alt="Jungle Run gameplay with a character jumping between platforms and collecting items" loading="lazy" data-zoomable tabindex="0"><figcaption>Platforming and collectibles</figcaption></figure>
+    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/jungle-run-start-2015.png' | relative_url }}" alt="Jungle Run start screen asking the player to enter a name" loading="lazy" data-zoomable tabindex="0"><figcaption>Start screen</figcaption></figure>
+    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/jungle-run-level-2015.png' | relative_url }}" alt="Jungle Run gameplay showing another section of the level with the character on a platform" loading="lazy" data-zoomable tabindex="0"><figcaption>Exploring a level</figcaption></figure>
+  </div>
 </section>
 
 <section class="student-project">
