@@ -21,7 +21,7 @@ nav_order: 3
 .student-photo, .student-certificate { margin: .8rem 0 0; }
 .student-photo img { width: 100%; border-radius: 12px; }
 .student-logo { margin: 1rem 0 0; padding: 1rem; background: #fff; border: 1px solid var(--global-divider-color); border-radius: 14px; text-align: center; }
-.student-logo img { display: block; width: 100%; height: 210px; object-fit: cover; object-position: center 52%; border-radius: 8px; }
+.student-logo img { display: block; width: auto; max-width: 100%; height: 210px; margin: auto; object-fit: contain; border-radius: 8px; }
 .student-logo figcaption { font-size: .8rem; color: #666; margin-top: .35rem; }
 .student-photo figcaption, .student-certificate figcaption, .student-gallery figcaption { color: var(--global-text-color-light); font-size: .8rem; padding-top: .45rem; }
 .student-certificate { border: 1px solid var(--global-divider-color); border-radius: 12px; overflow: hidden; background: #f6f2ff; }
@@ -37,6 +37,7 @@ nav_order: 3
 .student-gallery { display: flex; gap: .85rem; margin: .8rem 0 0; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: thin; padding: .25rem .2rem 1rem; }
 .student-gallery figure { margin: 0; flex: 0 0 clamp(160px, 24%, 215px); scroll-snap-align: start; }
 .student-gallery img { display: block; width: 100%; aspect-ratio: 9 / 15; object-fit: cover; object-position: top; border: 1px solid var(--global-divider-color); border-radius: 12px; box-shadow: 0 8px 18px rgba(20,20,45,.12); }
+.student-gallery .student-splash img { object-fit: contain; background: white; }
 [data-zoomable] { cursor: zoom-in; transition: transform .25s ease, filter .25s ease; }
 [data-zoomable]:hover { transform: translateY(-3px); filter: brightness(.97); }
 [data-zoomable]:focus-visible { outline: 3px solid #7652d2; outline-offset: 3px; }
@@ -107,12 +108,12 @@ nav_order: 3
   </div>
     </div>
     <div><figure class="student-photo"><img src="{{ '/assets/img/undergrad/food-tour-team.jpg' | relative_url }}" alt="Deep Shankar Pandey and teammates wearing medals in a 2016 group photo" loading="lazy" data-zoomable tabindex="0"><figcaption>With teammates in 2016</figcaption></figure>
-      <figure class="student-logo"><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal original app logo" loading="lazy" data-zoomable tabindex="0"><figcaption>The original Food Tours Nepal logo</figcaption></figure>
+      <figure class="student-logo"><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal original app logo" loading="lazy"><figcaption>The original Food Tours Nepal logo</figcaption></figure>
     </div>
   </div>
   <div class="student-gallery-heading"><h3>Inside the app</h3><div class="student-gallery-controls"><button type="button" data-gallery-step="-1" aria-controls="food-tour-gallery" aria-label="Previous app screenshot">‹</button><button type="button" data-gallery-step="1" aria-controls="food-tour-gallery" aria-label="Next app screenshot">›</button></div></div>
   <div class="student-gallery" id="food-tour-gallery" role="group" aria-label="Food Tours Nepal app screenshots">
-    <figure><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal app splash screen with its logo" loading="lazy" data-zoomable tabindex="0"><figcaption>App splash screen</figcaption></figure>
+    <figure class="student-splash"><img src="{{ '/assets/img/undergrad/food-tour-logo.jpg' | relative_url }}" alt="Food Tours Nepal app splash screen with its logo" loading="lazy"><figcaption>App splash screen</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-foods.jpg' | relative_url }}" alt="Food Tours Nepal app screen showing a grid of Nepali foods" loading="lazy" data-zoomable tabindex="0"><figcaption>Explore dishes</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-map.jpg' | relative_url }}" alt="Food Tours Nepal map screen with nearby food places" loading="lazy" data-zoomable tabindex="0"><figcaption>Find nearby places</figcaption></figure>
     <figure><img src="{{ '/assets/img/undergrad/food-tour-cuisines.jpg' | relative_url }}" alt="Food Tours Nepal app screen showing regional cuisines" loading="lazy" data-zoomable tabindex="0"><figcaption>Discover cuisines</figcaption></figure>
@@ -137,8 +138,8 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="student-feature"><div>
     <div class="student-meta">2016 · Individual coding competition<br><span class="student-award">★ First place · ACEM Code Camp</span></div>
     <h2>ACEM Code Camp</h2>
-    <p>Competed individually in the Code Camp coding challenge at TechBihani 2.0.</p>
-    <div class="student-team"><h3>Participation</h3><ul><li class="student-lead">Deep Pandey <strong>Solo competitor</strong></li></ul></div>
+    <p>Won the individual coding competition by completing all of its programming challenges first.</p>
+    <div class="student-team"><h3>Participant</h3><ul><li class="student-lead">Deep Pandey <strong>Winner</strong></li></ul></div>
   </div><figure class="student-certificate"><img src="{{ '/assets/img/undergrad/acem-code-camp-2016.jpg' | relative_url }}" alt="ACEM TechBihani 2.0 certificate awarding first place in Code Camp" loading="lazy" data-zoomable tabindex="0"><figcaption>First place · ACEM Code Camp, January 2016</figcaption></figure></div>
 </section>
 
