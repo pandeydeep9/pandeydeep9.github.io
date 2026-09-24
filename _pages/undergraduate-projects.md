@@ -56,6 +56,9 @@ nav_order: 3
 .student-project-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; margin-top: 1.2rem; }
 .student-project-gallery figure { margin: 0; }
 .student-project-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #191923; border-radius: 12px; }
+.student-vr-points { display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; margin: .7rem 0 1rem; list-style: none; }
+.student-vr-points li { padding: .35rem .7rem; border-radius: 999px; background: #e9e3fa; color: #4d339b; font-size: .82rem; font-weight: 700; }
+.student-vr-credit { font-size: .86rem; color: var(--global-text-color-light); }
 .student-afterword { border-left: 4px solid #6941c6; padding: .7rem 1.2rem; margin: 2rem 0 .5rem; background: var(--global-card-bg-color); border-radius: 0 12px 12px 0; }
 .student-afterword h2 { margin: 0 0 .55rem; font-size: 1.35rem; }
 .student-afterword p { max-width: 820px; margin: 0; line-height: 1.65; }
@@ -70,13 +73,15 @@ nav_order: 3
 <section class="student-project student-project-featured" id="redirected-walking">
   <div class="student-meta">2017 · Undergraduate major project · Virtual reality</div>
   <h2>Redirected Walking in Virtual Reality</h2>
-  <p>How can someone explore a large virtual world while walking within a smaller physical space? As the main developer, I implemented three redirected walking techniques in Unity: translational gain, rotational gain, and curvature gain. We built experimental scenes and a playable VR game, then studied how the techniques affected participants’ experience and performance using an HTC Vive.</p>
-  <p>The project developed alongside my time at Paracosma. I explored maze generation for its game environment. I’m grateful to Ken Ehrhart and Sujit Jha at Paracosma for sharing equipment and resources, and to our project supervisor Prof. Dr. Shashidhar Ram Joshi for his guidance.</p>
+  <p><strong>A bigger virtual world within a smaller room.</strong> I implemented three ways to steer a player’s movement in Unity—translation, rotation, and curvature gains—and brought them together in a playable HTC Vive game. Our team tested how the techniques shaped navigation and gameplay.</p>
+  <ul class="student-vr-points"><li>Three walking techniques</li><li>Playable VR game</li><li>Participant study</li></ul>
+  <p>The project grew alongside my time at Paracosma. I also implemented maze algorithms for the game environment, and the experience carried into my work as a VR game developer.</p>
+  <p class="student-vr-credit">With thanks to Ken Ehrhart and Sujit Jha at Paracosma for their support, and to our supervisor Prof. Dr. Shashidhar Ram Joshi for his guidance.</p>
   <div class="student-links"><a href="https://www.youtube.com/watch?v=_bluD007JiE" target="_blank" rel="noopener noreferrer">Watch game demo ↗</a><a href="https://drive.google.com/file/d/1bM9cF2aNjRDZ9Yr5If0ON40mX6NfcCc7/view?usp=sharing" target="_blank" rel="noopener noreferrer">Read the project report ↗</a><a href="https://github.com/pandeydeep9/Mazes" target="_blank" rel="noopener noreferrer">Explore maze algorithms ↗</a></div>
   <div class="student-team"><h3>Team</h3><ul><li class="student-lead">Deep Pandey <strong>Main developer</strong></li><li>Bidur Wagle</li><li>Ashu Adhikari</li><li>Sujal Dhungana</li></ul></div>
   <div class="student-project-gallery">
-    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/vr-game-one-enemy-2017.png' | relative_url }}" alt="Unity VR game scene with one skeletal enemy in a stone room" loading="lazy" data-zoomable tabindex="0"><figcaption>VR game environment · one enemy</figcaption></figure>
-    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/vr-game-two-enemies-2017.png' | relative_url }}" alt="Unity VR game scene with two skeletal enemies in a stone room" loading="lazy" data-zoomable tabindex="0"><figcaption>VR game environment · two enemies</figcaption></figure>
+    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/vr-game-one-enemy-2017.jpg' | relative_url }}" alt="Unity VR game scene with one skeletal enemy in a stone room" loading="lazy" data-zoomable tabindex="0"><figcaption>VR game environment · one enemy</figcaption></figure>
+    <figure class="student-photo"><img src="{{ '/assets/img/undergrad/vr-game-two-enemies-2017.jpg' | relative_url }}" alt="Unity VR game scene with two skeletal enemies in a stone room" loading="lazy" data-zoomable tabindex="0"><figcaption>VR game environment · two enemies</figcaption></figure>
   </div>
 </section>
 
