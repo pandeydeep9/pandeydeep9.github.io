@@ -17,36 +17,9 @@ nav_order: 2
   </article>
 </div>
 
-## Trustworthy AI research
+## Research
 
-Across my research, I study how models can learn from limited data while making their uncertainty more useful and reliable.
-
-<div class="work-grid">
-  <article class="work-card">
-    <span class="work-label">IEEE TPAMI 2026</span>
-    <h2>Generalized regularized evidential deep learning</h2>
-    <p>We studied how evidential activation functions affect learning and developed a broader family of activations and regularizers, evaluated across classification and few-shot tasks.</p>
-    <a href="https://doi.org/10.1109/TPAMI.2026.3660699">Read the paper <span aria-hidden="true">↗</span></a>
-  </article>
-  <article class="work-card">
-    <span class="work-label">NeurIPS 2024</span>
-    <h2>Bayesian adaptation of foundation models</h2>
-    <p>Bayesian parameter-efficient fine-tuning adapts vision foundation models with limited examples while improving the reliability of their confidence estimates.</p>
-    <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/4f1fbd5ab8d58d0ecf33c95fd46b900e-Abstract-Conference.html">Read the paper <span aria-hidden="true">↗</span></a>
-  </article>
-  <article class="work-card">
-    <span class="work-label">ICML 2023</span>
-    <h2>Learning from all training samples</h2>
-    <p>We identified why some evidential models fail to learn from examples in zero-evidence regions, then developed a regularizer to address that limitation.</p>
-    <a href="https://proceedings.mlr.press/v202/pandey23a.html">Read the paper <span aria-hidden="true">↗</span></a>
-  </article>
-  <article class="work-card">
-    <span class="work-label">Ph.D. research</span>
-    <h2>Learning from limited data</h2>
-    <p>I developed uncertainty-aware meta-learning methods for few-shot classification and regression, focusing on efficiency, robustness, and calibrated predictions.</p>
-    <a href="https://repository.rit.edu/theses/12039/">Read the dissertation <span aria-hidden="true">↗</span></a>
-  </article>
-</div>
+I develop trustworthy learning methods for limited data, with an emphasis on useful uncertainty estimates. [Explore my research]({{ '/research/' | relative_url }}) for a clear account of the papers, collaborations, and undergraduate thesis.
 
 ## Broader interests
 

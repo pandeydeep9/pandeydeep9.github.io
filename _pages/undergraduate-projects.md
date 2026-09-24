@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/undergraduate/
 description: Projects in virtual reality, games, graphics, and software.
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 <style>
