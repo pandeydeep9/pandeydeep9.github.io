@@ -114,6 +114,19 @@ nav_order: 3
   </div>
 </section>
 
+<section class="research-section" aria-labelledby="research-patents">
+  <h2 id="research-patents">Patent applications</h2>
+  <div class="research-list">
+    <article class="research-card">
+      <div class="research-meta">Published international patent application · 2025 · WO2025096898A1</div>
+      <h3>Belief weighted average computation for classification problems in video applications</h3>
+      <div class="research-authors">Deep Shankar Pandey · Hyomin Choi · Fabien Racape · Shahab Hamidi-Rad · Thierry Dumas</div>
+      <p>International patent application on belief-weighted computation for classification problems in video applications.</p>
+      <a href="https://patents.google.com/patent/WO2025096898A1/en">View published application on Google Patents ↗</a>
+    </article>
+  </div>
+</section>
+
 <section class="research-section" aria-labelledby="research-undergraduate">
   <h2 id="research-undergraduate">Undergraduate research</h2>
   <div class="research-card research-thesis">
